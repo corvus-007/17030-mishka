@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Денис Васильев](https://up.htmlacademy.ru/adaptive/10/user/17030).
-* Наставник: `Неизвестно`.
+* Наставник: [Олег Петров](https://up.htmlacademy.ru/adaptive/10/user/42390).
 
 ---
 
