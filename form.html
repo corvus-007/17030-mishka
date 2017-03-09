@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta content="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Мишка / Форма</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="top-menu">
+        <button class="top-menu__toggle" type="button">Показать меню</button>
+        <div class="top-menu__logo">
+          <img class="top-menu__logo-image" src="http://placehold.it/86x35/2b8/fff" width="86" height="35" alt="Логотип интернет-магазина «Мишка»" />
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                <svg class="main-nav__icon">
+                  <use xlink:href="#"></use>
+                </svg>
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                <svg class="main-nav__icon">
+                  <use xlink:href="#"></use>
+                </svg>
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <header class="page-header">
+      <h1 class="page-title">Каталог товаров</h1>
+      <p class="page-intro">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
+    </header>
+
+    <form class="form-order" name="form-order" action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset class="form-order__section">
+        <legend class="form-order__section-title">Тип</legend>
+        <input class="form-order__custom-radio" type="radio" id="field-accessory" name="type" value="accessory" checked />
+        <label class="form-order__radio-label" for="field-accessory">Аксессуар для интерьера</label>
+        <input class="form-order__custom-radio" type="radio" id="field-toy" name="type" value="toy" />
+        <label class="form-order__radio-label" for="field-toy">Детская игрушка</label>
+      </fieldset>
+
+      <fieldset class="form-order__section">
+        <legend class="form-order__section-title">Цвет</legend>
+        <input class="form-order__custom-chekbox" type="checkbox" id="field-white" name="color" value="white" checked />
+        <label class="form-order__chekbox-label" for="field-white">Белый</label>
+        <input class="form-order__custom-chekbox" type="checkbox" id="field-gray" name="color" value="gray" checked />
+        <label class="form-order__chekbox-label" for="field-gray">Серый</label>
+        <input class="form-order__custom-chekbox" type="checkbox" id="field-tiffani" name="color" value="tiffani" />
+        <label class="form-order__chekbox-label" for="field-tiffani">«Тиффани»</label>
+        <input class="form-order__custom-chekbox" type="checkbox" id="field-black" name="color" value="black" />
+        <label class="form-order__chekbox-label" for="field-black">Черный</label>
+        <input class="form-order__custom-chekbox" type="checkbox" id="field-pink" name="color" value="pink" />
+        <label class="form-order__chekbox-label" for="field-pink">Розовый</label>
+        <input class="form-order__custom-chekbox" type="checkbox" id="field-orange" name="color" value="orange" />
+        <label class="form-order__chekbox-label" for="field-orange">Оранжевый</label>
+      </fieldset>
+
+      <fieldset class="form-order__section">
+        <legend class="form-order__section-title">ФИО</legend>
+        <label class="form-order__label" for="field-firstname">Имя:</label>
+        <input class="form-order__input" type="text" id="field-firstname" name="firstname" placeholder="Введите ваше имя*" required />
+        <label class="form-order__label" for="field-surname">Фамилия:</label>
+        <input class="form-order__input" type="text" id="field-surname" name="surname" placeholder="Укажите фамилию*" required />
+        <label class="form-order__label" for="field-middlename">Отчество:</label>
+        <input class="form-order__input" type="text" id="field-middlename" name="middlename" placeholder="Отчество, если желаете" />
+      </fieldset>
+
+      <fieldset class="form-order__section">
+        <legend class="form-order__section-title">Тел<span>ефон</span></legend>
+        <input class="form-order__input form-order__input--icon-tel" type="tel" name="tel" placeholder="+7 XXX XX XX*" required />
+      </fieldset>
+
+      <fieldset class="form-order__section">
+        <legend class="form-order__section-title">E-mail</legend>
+        <input class="form-order__input form-order__input--icon-email" type="email" name="email" placeholder="Ваш Email*" required />
+      </fieldset>
+
+      <fieldset class="form-order__section">
+        <legend class="form-order__section-title">Доп<span>олнительно</span></legend>
+        <textarea class="form-order__textarea" name="message" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+      </fieldset>
+
+      <p class="form-order__footnote">*Поля обязательны для заполнения</p>
+      <button class="button" type="submit">Отправить заказ</button>
+    </form>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <ul class="site-footer__socials">
+          <li class="site-footer__socials-item">
+            <a class="site-footer__socials-link" href="#" title="Мы в Instagram">
+              <svg class="site-footer__socials-icon">
+                <use xlink:href="#"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="site-footer__socials-item">
+            <a class="site-footer__socials-link" href="#" title="Мы в Facebook">
+              <svg class="site-footer__socials-icon">
+                <use xlink:href="#"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="site-footer__socials-item">
+            <a class="site-footer__socials-link" href="#" title="Мы в Twitter">
+              <svg class="site-footer__socials-icon">
+                <use xlink:href="#"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="site-footer__developer">
+          Разработано
+          <a class="site-footer__developer-link" href="#">
+            <svg class="site-footer__developer-icon">
+              <use xlink:href="#"></use>
+            </svg>
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
