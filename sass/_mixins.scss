@@ -1,14 +1,12 @@
 @mixin container() {
-
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 @mixin clearfix() {
-  &:before,
-  &:after {
+  &::after {
     content: "";
     display: table;
-  }
-  &:after {
     clear: both;
   }
 }
