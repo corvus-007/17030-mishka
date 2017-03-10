@@ -2,43 +2,44 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta content="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="top-menu">
         <button class="top-menu__toggle" type="button">Показать меню</button>
         <div class="top-menu__logo">
-          <img class="top-menu__logo-image" src="http://placehold.it/86x35/2b8/fff" width="86" height="35" alt="Логотип интернет-магазина «Мишка»" />
+          <img class="top-menu__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»" />
         </div>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Вязание на заказ</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                <svg class="main-nav__icon">
-                  <use xlink:href="#"></use>
-                </svg>
-                Поиск по сайту
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                <svg class="main-nav__icon">
-                  <use xlink:href="#"></use>
-                </svg>
-                Корзина: пока пуста
-              </a>
-            </li>
-          </ul>
-        </nav>
       </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              <svg class="main-nav__icon">
+                <use xlink:href="#"></use>
+              </svg>
+              Поиск по сайту
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              <svg class="main-nav__icon">
+                <use xlink:href="#"></use>
+              </svg>
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <h1 class="page-slogan">
@@ -46,13 +47,13 @@
     </h1>
 
     <div class="category-nav">
-      <a class="category-nav__item" href="#">
+      <a class="category-nav__item category-nav__item--accessory" href="#">
         <span class="category-nav__text">Предметы интерьера</span>
         <svg class="category-nav__icon">
           <use xlink:href="#"></use>
         </svg>
       </a>
-      <a class="category-nav__item" href="#">
+      <a class="category-nav__item category-nav__item--toys" href="#">
         <span class="category-nav__text">Детские игрушки</span>
         <svg class="category-nav__icon">
           <use xlink:href="#"></use>
@@ -85,7 +86,7 @@
             </tr>
           </tbody>
         </table>
-        <img class="featured-product__image" src="http://placehold.it/260x315/2b8/fff" width="260" height="315" alt="Вязаные корзинки" />
+        <img class="featured-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки" />
         <div class="featured-product__price">
           Цена: 990 руб.
         </div>
