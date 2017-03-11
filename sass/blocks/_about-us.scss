@@ -1,3 +1,62 @@
 .about-us {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
+.about-us__inner {
+  @include container();
+}
+
+.about-us__title {
+  margin: 0;
+  margin-bottom: 27px;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.about-us__list {
+  @include clear-list();
+  color: #000000;
+}
+
+.about-us__item {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+
+  &::before {
+    content: "";
+    display: block;
+    margin-bottom: 17px;
+    width: 45px;
+    height: 45px;
+    background-color: $color-primary;
+  }
+
+  &--eco {
+
+  }
+
+  &--cheap {
+
+  }
+
+  &--likes {
+
+  }
+
+  &--love {
+
+  }
+
+  &--support {
+
+  }
+
+  &--gift {
+
+  }
 }
