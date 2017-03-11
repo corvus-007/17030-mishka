@@ -1,3 +1,37 @@
 .category-nav {
 
 }
+
+.category-nav__item {
+  @include container();
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+
+  &--accessory {
+    background-color: #63d1bb;
+  }
+
+  &--toys {
+    background-color: #56c3b2;
+  }
+}
+
+.category-nav__text {
+  max-width: 110px;
+}
+
+.category-nav__icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  background-color: #35a999;
+}
