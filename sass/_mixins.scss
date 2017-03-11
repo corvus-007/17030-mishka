@@ -17,7 +17,7 @@
   list-style: none;
 }
 
-@mixin replace-text {
+@mixin hide-text {
   overflow: hidden;
   text-indent: -1000px;
 }
