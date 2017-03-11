@@ -1,3 +1,43 @@
 .contacts {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
 
+.contacts__inner {
+  @include container();
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 27px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.contacts__info {
+  @include clear-list();
+  margin-bottom: 40px;
+}
+
+.contacts__info-item {
+  margin-bottom: 35px;
+  display: flex;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__info-field {
+  padding-right: 30px;
+}
+
+.contacts__info-value {
+
+}
+
+.contacts__map {
+  margin-bottom: 40px;
 }
