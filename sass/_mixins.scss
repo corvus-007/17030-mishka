@@ -16,3 +16,8 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin replace-text {
+  overflow: hidden;
+  text-indent: -1000px;
+}
