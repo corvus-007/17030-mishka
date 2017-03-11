@@ -1,10 +1,11 @@
 // Colors
 $color-base: #444444;
 $color-primary: #63d1bb;
-
+$color-gray: #f1f1f1;
+$color-gray-1: #ececec;
 $font-family: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
 
 // Breakpoints
-$mobile-up: 320px;
-$tablet-up: 768px;
-$desktop-up: 1150px;
+$mobile-up: "(min-width: 320px)";
+$tablet-up: "(min-width: 768px)";
+$desktop-up: "(min-width: 1150px)";
