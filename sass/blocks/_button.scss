@@ -1,3 +1,32 @@
 .button {
+  width: 100%;
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  user-select: none;
+  color: currentColor;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
 
+  &:hover,
+  &:focus {
+
+  }
+
+  &:active {
+
+  }
 }
