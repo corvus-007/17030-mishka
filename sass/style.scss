@@ -1,7 +1,11 @@
 @import "variables";
 @import "mixins";
 
-// Blocks
+@import "global/normalize";
+@import "global/fonts";
+@import "global/base";
+@import "global/type";
+
 @import "blocks/button";
 @import "blocks/site-header";
 @import "blocks/top-menu";
