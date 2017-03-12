@@ -209,7 +209,6 @@
   &::placeholder {
     font-weight: normal;
     color: $color-base;
-    font-family: inherit;
     opacity: 0.3;
   }
 }
@@ -220,6 +219,8 @@
   padding: 15px;
   border: 2px solid;
   resize: vertical;
+  font-family: inherit;
+  font-size: 17px;
   box-sizing: border-box;
   color: #000000;
   transition: border-color 0.25s;
@@ -227,6 +228,12 @@
   &:hover,
   &:focus {
     border-color: $color-primary;
+  }
+
+  &::placeholder {
+    font-weight: normal;
+    color: $color-base;
+    opacity: 0.3;
   }
 }
 
