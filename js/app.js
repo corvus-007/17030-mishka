@@ -4,25 +4,20 @@ ymaps.ready(initMap);
 
 function initMap() {
   map = new ymaps.Map("contacts-map", {
-    center: [59.939327, 30.327901],
+    center: [59.936326864825475, 30.321777768508905],
     zoom: 16,
     controls: []
   });
 
   map.behaviors.disable(['scrollZoom']);
 
-  mapMarker = new ymaps.Placemark([59.938657, 30.322982], {
-    hintContent: "ул. Большая Конюшенная 19/8, Санкт-Петербург"
+  mapMarker = new ymaps.Placemark([59.936326864825475, 30.321777768508905], {
+    hintContent: "г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101"
   }, {
     iconLayout: 'default#image',
-    iconImageHref: 'img/map-pin.svg',
-    iconImageSize: [79, 139],
-    iconImageOffset: [-39, -139],
-    iconShadow: true,
-    iconShadowLayout: 'default#image',
-    iconShadowImageHref: 'img/shadow-map-pin.png',
-    iconShadowImageSize: [182, 110],
-    iconShadowImageOffset: [0, -110]
+    iconImageHref: 'img/icon-map-pin.svg',
+    iconImageSize: [67, 100],
+    iconImageOffset: [-33, -100]
   });
 
   map.geoObjects.add(mapMarker);
