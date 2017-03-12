@@ -205,6 +205,13 @@
   &:focus {
     border-bottom-color: $color-primary;
   }
+
+  &::placeholder {
+    font-weight: normal;
+    color: $color-base;
+    font-family: inherit;
+    opacity: 0.3;
+  }
 }
 
 .form-order__textarea {
