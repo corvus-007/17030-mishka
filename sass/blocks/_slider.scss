@@ -1,3 +1,55 @@
 .slider {
 
 }
+
+.slider__content {
+  @include clear-list();
+  margin-bottom: 34px;
+}
+
+.slider__item {
+
+}
+
+.slider__arrows {
+  display: flex;
+  margin-bottom: 37px;
+}
+
+.slider__arrow {
+  @include hide-text();
+  position: relative;
+  width: 50%;
+  min-height: 52px;
+  padding: 13px 40px;
+  background-color: #fff;
+  border: 1px solid $color-gray-1;
+  cursor: pointer;
+  user-select: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 26px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:last-child {
+    border-left: none;
+  }
+
+  &--prev::before {
+    background-image: url("../img/icon-left-arrow.svg");
+  }
+
+  &--next::before {
+    background-image: url("../img/icon-right-arrow.svg");
+  }
+}
