@@ -41,3 +41,7 @@
 .contacts__map {
   margin-bottom: 40px;
 }
+
+.contacts__footer {
+  @include container();
+}
