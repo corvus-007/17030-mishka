@@ -30,33 +30,42 @@
   &::before {
     content: "";
     display: block;
+    margin-left: -5px;
     margin-bottom: 17px;
-    width: 45px;
-    height: 45px;
-    background-color: $color-primary;
+    width: 55px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
 
-  &--eco {
-
+  &--eco::before {
+    height: 37px;
+    background-image: url("../img/icon-feature-1.svg");
   }
 
-  &--cheap {
-
+  &--cheap::before {
+    height: 27px;
+    background-image: url("../img/icon-feature-2.svg");
   }
 
-  &--likes {
-
+  &--likes::before {
+    height: 27px;
+    background-image: url("../img/icon-feature-3.svg");
   }
 
-  &--love {
-
+  &--love::before {
+    height: 34px;
+    background-image: url("../img/icon-feature-4.svg");
   }
 
-  &--support {
-
+  &--support::before {
+    height: 23px;
+    background-image: url("../img/icon-feature-5.svg");
   }
 
-  &--gift {
-
+  &--gift::before {
+    height: 32px;
+    background-image: url("../img/icon-feature-6.svg");
   }
 }
