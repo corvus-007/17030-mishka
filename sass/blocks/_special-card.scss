@@ -1,3 +1,57 @@
 .special-card {
+  padding: 28px 34px;
+  border: 1px solid #ececec;
+}
 
+.special-card__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 23px;
+  padding-left: 55px;
+  font-size: 17px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 22px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: url("../img/icon-video.svg") no-repeat center / contain;
+  }
+}
+
+.special-card__video-holder {
+  position: relative;
+  margin-left: -35px;
+  margin-right: -35px;
+  margin-bottom: 28px;
+}
+
+.special-card__video {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.special-card__play {
+  @include hide-text();
+  position: absolute;
+  width: 100px;
+  height: 76px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: none;
+  background: url("../img/icon-play.svg") no-repeat center;
+}
+
+.special-card__text {
+  margin: 0;
+  margin-bottom: 23px;
+  font-size: 13px;
 }
