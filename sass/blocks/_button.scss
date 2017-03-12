@@ -5,7 +5,7 @@
   padding-bottom: 14px;
   padding-left: 10px;
   padding-right: 10px;
-  border: 2px solid;
+  border: 2px solid $color-base;
   vertical-align: middle;
   white-space: nowrap;
   text-transform: uppercase;
@@ -20,13 +20,16 @@
   box-sizing: border-box;
   outline: none;
   cursor: pointer;
+  transition: 0.25s;
 
   &:hover,
   &:focus {
-
+    color: #ffffff;
+    background-color: $color-base;
   }
 
   &:active {
-
+    color: rgba(#ffffff, 0.3);
+    background-color: $color-base;
   }
 }
