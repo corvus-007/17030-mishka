@@ -26,6 +26,21 @@
     transition: opacity 0.25s;
   }
 
+  &:hover,
+  &:focus {
+
+    &::after {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
   &--accessory {
     background-color: #63d1bb;
 
@@ -39,21 +54,6 @@
 
     &::after {
       background-image: url("../img/icon-toy.svg");
-    }
-  }
-
-  &:hover,
-  &:focus {
-
-    &::after {
-      opacity: 0.7;
-    }
-  }
-
-  &:active {
-
-    &::after {
-      opacity: 0.3;
     }
   }
 }
