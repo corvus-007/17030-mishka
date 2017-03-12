@@ -1,6 +1,18 @@
 @mixin container() {
   padding-left: 30px;
   padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media #{$tablet-up} {
+    max-width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media #{$desktop-up} {
+    max-width: 1050px;
+  }
 }
 
 @mixin clearfix() {
@@ -20,4 +32,16 @@
 @mixin hide-text {
   overflow: hidden;
   text-indent: -1000px;
+}
+
+@mixin sr-only {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
 }
