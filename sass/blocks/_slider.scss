@@ -17,13 +17,13 @@
 }
 
 .slider__arrow {
-  @include hide-text();
   position: relative;
   width: 50%;
   min-height: 52px;
   padding: 13px 40px;
-  background-color: #fff;
   border: 1px solid $color-gray-1;
+  font-size: 0;
+  background-color: #ffffff;
   cursor: pointer;
   user-select: none;
 

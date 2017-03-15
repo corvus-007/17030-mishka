@@ -29,11 +29,6 @@
   list-style: none;
 }
 
-@mixin hide-text {
-  overflow: hidden;
-  text-indent: -1000px;
-}
-
 @mixin sr-only {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);

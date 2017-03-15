@@ -1,6 +1,6 @@
 .special-card {
   padding: 28px 34px;
-  border: 1px solid #ececec;
+  border: 1px solid $color-gray-1;
 }
 
 .special-card__title {
@@ -37,7 +37,6 @@
 }
 
 .special-card__play {
-  @include hide-text();
   position: absolute;
   width: 100px;
   height: 76px;
@@ -47,6 +46,7 @@
   top: 0;
   bottom: 0;
   border: none;
+  font-size: 0;
   background: url("../img/icon-play.svg") no-repeat center;
 }
 
