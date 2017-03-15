@@ -3,12 +3,13 @@
   @include clearfix();
   padding-top: 22px;
   padding-bottom: 22px;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $color-gray-1;
+  text-align: center;
 }
 
 .top-menu__logo {
-  margin: auto;
-  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .top-menu__logo-image {
