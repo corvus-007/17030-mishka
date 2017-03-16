@@ -3,8 +3,8 @@ $color-base: #444444;
 $color-primary: #63d1bb;
 $color-white: #ffffff;
 $color-black: #000000;
-$color-gray: #f1f1f1;
-$color-gray-1: #ececec;
+$color-gray-darken: #ececec;
+$color-gray-lighten: #f1f1f1;
 
 // Font
 $font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -12,7 +12,6 @@ $font-size: 15px;
 $line-height: 24px;
 
 // Dimensions
-
 $product-card-padding: 28px;
 $special-card-padding: 34px;
 
