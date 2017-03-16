@@ -17,6 +17,7 @@
   padding-bottom: 32px;
   overflow: hidden;
   border: none;
+  border-top: 2px solid $color-primary;
 }
 
 .form-order__section-title {
@@ -28,18 +29,6 @@
   font-size: 17px;
   line-height: 16px;
   color: $color-primary;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 100%;
-    width: 100vw;
-    margin: auto;
-    height: 2px;
-    background-color: $color-primary;
-  }
 
   span {
     display: none;
