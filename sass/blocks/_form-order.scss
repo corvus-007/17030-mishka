@@ -194,10 +194,11 @@
   padding: 14px 0;
   border: none;
   border-bottom: 2px solid;
+  font-family: inherit;
   font-size: 17px;
   line-height: 18px;
   box-sizing: border-box;
-  color: #000000;
+  color: $color-black;
   outline: none;
   transition: border-bottom-color 0.25s;
 
@@ -222,7 +223,7 @@
   font-family: inherit;
   font-size: 17px;
   box-sizing: border-box;
-  color: #000000;
+  color: $color-black;
   transition: border-color 0.25s;
 
   &:hover,

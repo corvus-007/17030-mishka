@@ -13,12 +13,12 @@
   font-weight: 600;
   font-size: 25px;
   line-height: 30px;
-  color: #000000;
+  color: $color-black;
 }
 
 .about-us__list {
   @include clear-list();
-  color: #000000;
+  color: $color-black;
 }
 
 .about-us__item {
