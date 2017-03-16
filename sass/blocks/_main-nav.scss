@@ -4,16 +4,18 @@
 
 .main-nav__list {
   @include clear-list();
+
 }
 
 .main-nav__item {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $color-gray-1;
   font-weight: 600;
   font-size: 17px;
 }
 
 .main-nav__link {
   @include container();
+  
   display: block;
   padding-top: 30px;
   padding-bottom: 30px;

@@ -5,6 +5,7 @@
 
 .about-us__inner {
   @include container();
+
 }
 
 .about-us__title {
@@ -18,6 +19,7 @@
 
 .about-us__list {
   @include clear-list();
+  
   color: $color-black;
 }
 

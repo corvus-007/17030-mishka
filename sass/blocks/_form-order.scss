@@ -1,5 +1,6 @@
 .form-order {
   @include container();
+
   padding-bottom: 55px;
 }
 
@@ -48,17 +49,18 @@
 .form-order__custom-radio,
 .form-order__custom-checkbox {
   @include sr-only();
+
 }
 
 .form-order__radio-label,
 .form-order__checkbox-label {
   position: relative;
-  padding-left: 62px;
   display: block;
-  cursor: pointer;
+  padding-left: 62px;
   font-weight: 600;
   font-size: 17px;
   line-height: 18px;
+  cursor: pointer;
   user-select: none;
 
   &:last-child {
@@ -74,6 +76,22 @@
   margin-bottom: 22px;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  &:hover,
+  &:focus {
+
+    &::before {
+      border-color: $color-primary;
+    }
+  }
+
+  &:active {
+
+    &::before {
+      border-color: currentColor;
+      opacity: 0.3;
+    }
+  }
 
   &::before,
   &::after {
@@ -102,6 +120,19 @@
     background-color: $color-primary;
     transition: opacity 0.25s;
   }
+}
+
+.form-order__custom-radio:checked + .form-order__radio-label {
+
+  &::after {
+    opacity: 1;
+  }
+}
+
+.form-order__checkbox-label {
+  margin-bottom: 22px;
+  padding-top: 11px;
+  padding-bottom: 11px;
 
   &:hover,
   &:focus {
@@ -118,19 +149,6 @@
       opacity: 0.3;
     }
   }
-}
-
-.form-order__custom-radio:checked + .form-order__radio-label {
-
-  &::after {
-    opacity: 1;
-  }
-}
-
-.form-order__checkbox-label {
-  margin-bottom: 22px;
-  padding-top: 11px;
-  padding-bottom: 11px;
 
   &::before,
   &::after {
@@ -156,22 +174,6 @@
     opacity: 0;
     background: url("../img/icon-tick.svg") no-repeat center / contain;
     transition: opacity 0.25s;
-  }
-
-  &:hover,
-  &:focus {
-
-    &::before {
-      border-color: $color-primary;
-    }
-  }
-
-  &:active {
-
-    &::before {
-      border-color: currentColor;
-      opacity: 0.3;
-    }
   }
 }
 
@@ -208,9 +210,9 @@
   }
 
   &::placeholder {
+    opacity: 0.3;
     font-weight: normal;
     color: $color-base;
-    opacity: 0.3;
   }
 }
 
@@ -218,7 +220,7 @@
   width: 100%;
   min-height: 142px;
   padding: 15px;
-  border: 2px solid;
+  border: 2px solid $color-black;
   resize: vertical;
   font-family: inherit;
   font-size: 17px;

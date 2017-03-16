@@ -1,29 +1,34 @@
 @import "variables";
 @import "mixins";
 
+// Global
 @import "global/normalize";
 @import "global/fonts";
 @import "global/base";
-@import "global/type";
 
+// Blocks
 @import "blocks/button";
-@import "blocks/site-header";
-@import "blocks/top-menu";
+@import "blocks/modal";
+@import "blocks/slider";
+
 @import "blocks/main-nav";
-@import "blocks/category-nav";
-@import "blocks/page-slogan";
+@import "blocks/top-menu";
+@import "blocks/site-header";
+@import "blocks/site-footer";
+
 @import "blocks/page-header";
 @import "blocks/page-title";
+@import "blocks/page-slogan";
+
+@import "blocks/catalog";
+@import "blocks/product-card";
+@import "blocks/featured-product";
+@import "blocks/special-card";
+
+@import "blocks/about-us";
+@import "blocks/category-nav";
+@import "blocks/contacts";
 @import "blocks/form-cart";
 @import "blocks/form-order";
 @import "blocks/group-controls";
-@import "blocks/featured-product";
-@import "blocks/slider";
-@import "blocks/about-us";
 @import "blocks/reviews";
-@import "blocks/contacts";
-@import "blocks/catalog";
-@import "blocks/product-card";
-@import "blocks/special-card";
-@import "blocks/site-footer";
-@import "blocks/modal";

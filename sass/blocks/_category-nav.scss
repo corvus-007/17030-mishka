@@ -4,6 +4,7 @@
 
 .category-nav__item {
   @include container();
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,17 +15,6 @@
   font-size: 19px;
   line-height: 24px;
   color: #ffffff;
-
-  &::after {
-    content: "";
-    width: 60px;
-    height: 60px;
-    opacity: 0.5;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    transition: opacity 0.25s;
-  }
 
   &:hover,
   &:focus {
@@ -39,6 +29,17 @@
     &::after {
       opacity: 0.3;
     }
+  }
+
+  &::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: opacity 0.25s;
   }
 
   &--accessory {

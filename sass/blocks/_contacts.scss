@@ -5,6 +5,7 @@
 
 .contacts__inner {
   @include container();
+
 }
 
 .contacts__title {
@@ -18,12 +19,13 @@
 
 .contacts__info {
   @include clear-list();
+
   margin-bottom: 40px;
 }
 
 .contacts__info-item {
-  margin-bottom: 35px;
   display: flex;
+  margin-bottom: 35px;
 
   &:last-child {
     margin-bottom: 0;
@@ -41,8 +43,10 @@
 .contacts__map {
   height: 460px;
   margin-bottom: 40px;
+  overflow: hidden;
 }
 
 .contacts__footer {
   @include container();
+
 }

@@ -14,12 +14,12 @@
   &::before {
     content: "";
     position: absolute;
+    left: $special-card-padding;
     width: 32px;
     height: 22px;
-    left: $special-card-padding;
+    margin: auto;
     top: 0;
     bottom: 0;
-    margin: auto;
     background: url("../img/icon-video.svg") no-repeat center / contain;
   }
 }
@@ -36,13 +36,13 @@
 
 .special-card__play {
   position: absolute;
-  width: 100px;
-  height: 76px;
-  margin: auto;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
+  width: 100px;
+  height: 76px;
+  margin: auto;
   border: none;
   font-size: 0;
   background: url("../img/icon-play.svg") no-repeat center;

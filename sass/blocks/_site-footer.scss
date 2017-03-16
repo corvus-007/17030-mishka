@@ -5,10 +5,12 @@
 
 .site-footer__inner {
   @include container();
+
 }
 
 .site-footer__socials {
   @include clear-list();
+  
   display: flex;
   justify-content: center;
   align-items: center;

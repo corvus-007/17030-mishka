@@ -7,23 +7,20 @@
 
 .group-controls__input {
   @include sr-only();
+
 }
 
 .group-controls__label {
   flex-grow: 1;
-  padding: 16px;
   margin-right: 7px;
+  padding: 16px;
+  border: 2px solid rgba($color-base, 0.1);
+  text-align: center;
   font-weight: 600;
   font-size: 17px;
   line-height: 16px;
-  border: 2px solid rgba($color-base, 0.1);
-  text-align: center;
   cursor: pointer;
   transition: border-color 0.25s;
-
-  &:last-child {
-    margin-right: 0;
-  }
 
   &:hover,
   &:focus {
@@ -32,6 +29,10 @@
 
   &:active {
     border-color: $color-primary;
+  }
+
+  &:last-child {
+    margin-right: 0;
   }
 }
 

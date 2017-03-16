@@ -4,6 +4,7 @@
 
 .slider__content {
   @include clear-list();
+  
   margin-bottom: 34px;
 }
 
@@ -27,6 +28,18 @@
   cursor: pointer;
   user-select: none;
 
+  &:last-child {
+    border-left: none;
+  }
+
+  &--prev::before {
+    background-image: url("../img/icon-left-arrow.svg");
+  }
+
+  &--next::before {
+    background-image: url("../img/icon-right-arrow.svg");
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -39,17 +52,5 @@
     margin: auto;
     background-repeat: no-repeat;
     background-position: center;
-  }
-
-  &:last-child {
-    border-left: none;
-  }
-
-  &--prev::before {
-    background-image: url("../img/icon-left-arrow.svg");
-  }
-
-  &--next::before {
-    background-image: url("../img/icon-right-arrow.svg");
   }
 }
