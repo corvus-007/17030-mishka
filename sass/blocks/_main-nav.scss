@@ -9,24 +9,25 @@
 
 .main-nav__item {
   border-bottom: 1px solid $color-gray-1;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 17px;
+  line-height: $line-height;
 }
 
 .main-nav__link {
   @include container();
-  
+
   display: block;
   padding-top: 30px;
   padding-bottom: 30px;
   text-decoration: none;
-  color: currentColor;
+  color: $color-black;
 }
 
 .main-nav__icon {
   display: inline-block;
   vertical-align: middle;
-  width: 1em;
-  height: 1em;
+  width: 20px;
+  height: 20px;
   background-color: #2b8;
 }

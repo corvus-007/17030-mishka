@@ -24,7 +24,7 @@
   padding: 0;
   padding-right: 22px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   color: $color-primary;
@@ -38,7 +38,7 @@
     width: 100vw;
     margin: auto;
     height: 2px;
-    background-color: currentColor;
+    background-color: $color-primary;
   }
 
   span {
@@ -57,7 +57,7 @@
   position: relative;
   display: block;
   padding-left: 62px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   cursor: pointer;
@@ -88,18 +88,14 @@
   &:active {
 
     &::before {
-      border-color: currentColor;
+      border-color: $color-base;
       opacity: 0.3;
     }
   }
 
-  &::before,
-  &::after {
+  &::before {
     content: "";
     position: absolute;
-  }
-
-  &::before {
     top: 0;
     left: 0;
     width: 38px;
@@ -111,6 +107,8 @@
   }
 
   &::after {
+    content: "";
+    position: absolute;
     top: 12px;
     left: 12px;
     width: 15px;
@@ -145,18 +143,14 @@
   &:active {
 
     &::before {
-      border-color: currentColor;
+      border-color: $color-base;
       opacity: 0.3;
     }
   }
 
-  &::before,
-  &::after {
+  &::before {
     content: "";
     position: absolute;
-  }
-
-  &::before {
     left: 0;
     top: 0;
     width: 40px;
@@ -167,6 +161,8 @@
   }
 
   &::after {
+    content: "";
+    position: absolute;
     top: 12px;
     left: 9px;
     width: 22px;
@@ -185,7 +181,7 @@
 }
 
 .form-order__label {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 17px;
   line-height: 18px;
 }
@@ -221,10 +217,10 @@
   min-height: 142px;
   padding: 15px;
   border: 2px solid $color-black;
+  box-sizing: border-box;
   resize: vertical;
   font-family: inherit;
   font-size: 17px;
-  box-sizing: border-box;
   color: $color-black;
   transition: border-color 0.25s;
 
