@@ -1,10 +1,15 @@
 // Colors
-$color-base: #444444;
+$gray--darken: #444444;
+$gray--dark: #c6c6c6;
+$gray: #e5e5e5;
+$gray--light: #ececec;
+$gray--lighten: #f1f1f1;
+$gray--lightest: #fafafa;
+
+$color-base: $gray--darken;
 $color-primary: #63d1bb;
 $color-white: #ffffff;
 $color-black: #000000;
-$color-gray-darken: #ececec;
-$color-gray-lighten: #f1f1f1;
 
 // Font
 $font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;

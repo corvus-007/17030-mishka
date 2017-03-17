@@ -14,7 +14,7 @@
 
 .product-card__info {
   padding: $product-card-padding;
-  border: 1px solid $color-gray-darken;
+  border: 1px solid $gray--light;
 }
 
 .product-card__title {
@@ -41,7 +41,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 22px;
-  border-top: 1px solid $color-gray-darken;
+  border-top: 1px solid $gray--light;
 }
 
 .product-card__price {
@@ -58,5 +58,5 @@
   width: 20px;
   height: 20px;
   vertical-align: middle;
-  background-color: $color-gray-darken;
+  background-color: $gray--light;
 }

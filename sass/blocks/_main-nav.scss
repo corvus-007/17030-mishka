@@ -7,7 +7,7 @@
 }
 
 .main-nav__item {
-  border-bottom: 1px solid $color-gray-darken;
+  border-bottom: 1px solid $gray--light;
   font-weight: 700;
   font-size: $font-size--large;
   line-height: $line-height;
@@ -28,5 +28,5 @@
   width: 20px;
   height: 20px;
   vertical-align: middle;
-  background-color: $color-gray-darken;
+  background-color: $gray--light;
 }
