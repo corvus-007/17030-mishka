@@ -1,16 +1,16 @@
 .modal {
-  display: none;
   position: fixed;
   top: 50%;
   left: 0;
   right: 0;
+  z-index: 10;
   transform: translateY(-50%);
+  display: none;
   padding: 30px;
   padding-bottom: 45px;
   border-top: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px rgba(#000101, 0.25);
   background-color: $color-white;
-  z-index: 10;
 }
 
 .modal__close {

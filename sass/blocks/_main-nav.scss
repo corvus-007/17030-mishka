@@ -4,13 +4,12 @@
 
 .main-nav__list {
   @include clear-list();
-
 }
 
 .main-nav__item {
   border-bottom: 1px solid $color-gray-darken;
   font-weight: 700;
-  font-size: 17px;
+  font-size: $font-size--large;
   line-height: $line-height;
 }
 
@@ -20,14 +19,14 @@
   display: block;
   padding-top: 30px;
   padding-bottom: 30px;
-  text-decoration: none;
   color: $color-black;
+  text-decoration: none;
 }
 
 .main-nav__icon {
   display: inline-block;
-  vertical-align: middle;
   width: 20px;
   height: 20px;
+  vertical-align: middle;
   background-color: $color-gray-darken;
 }

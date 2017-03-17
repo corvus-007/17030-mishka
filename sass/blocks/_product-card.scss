@@ -21,8 +21,8 @@
   margin: 0;
   margin-bottom: 6px;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: $font-size--large;
+  line-height: $line-height;
 }
 
 .product-card__title-link {
@@ -32,7 +32,7 @@
 
 .product-card__parameters {
   margin-bottom: 18px;
-  font-size: 13px;
+  font-size: $font-size--small;
   line-height: 30px;
 }
 
@@ -46,8 +46,8 @@
 
 .product-card__price {
   font-weight: 700;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: $font-size;
+  line-height: $line-height;
 }
 
 .product-card__add-to-cart {

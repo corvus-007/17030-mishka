@@ -1,25 +1,25 @@
 .button {
-  width: 100%;
   display: inline-block;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 14px;
   padding-left: 10px;
   padding-right: 10px;
-  border: 2px solid $color-base;
   box-sizing: border-box;
+  font-weight: 700;
+  font-size: $font-size--large;
+  line-height: 20px;
+  text-transform: uppercase;
   vertical-align: middle;
   white-space: nowrap;
-  text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 20px;
-  user-select: none;
+  border: 2px solid $color-base;
   color: $color-base;
   background-color: $color-white;
-  cursor: pointer;
   transition: 0.25s;
+  cursor: pointer;
+  user-select: none;
 
   &:hover,
   &:focus {

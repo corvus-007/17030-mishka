@@ -5,7 +5,6 @@
 
 .contacts__inner {
   @include container();
-
 }
 
 .contacts__title {
@@ -48,5 +47,4 @@
 
 .contacts__footer {
   @include container();
-
 }
