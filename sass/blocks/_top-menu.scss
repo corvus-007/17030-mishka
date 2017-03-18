@@ -18,10 +18,28 @@
 }
 
 .top-menu__toggle {
+  position: relative;
   float: right;
+  width: 21px;
+  height: 21px;
   margin-top: 5px;
-  width: 20px;
-  height: 20px;
   font-size: 0;
   border: none;
+  background-color: $color-white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+
+  &--closed {
+    background-image: url("../img/icon-menu-open.svg");
+  }
+
+  &--opened {
+    background-image: url("../img/icon-menu-close.svg");
+  }
+
+  &--no-js {
+    display: none;
+  }
 }

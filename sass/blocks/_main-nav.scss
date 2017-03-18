@@ -1,5 +1,22 @@
 .main-nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: $color-white;
 
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
+
+  &--no-js {
+    position: static;
+    display: block;
+  }
 }
 
 .main-nav__list {
@@ -21,6 +38,16 @@
   padding-bottom: 30px;
   color: $color-black;
   text-decoration: none;
+  transition: color 0.25s;
+
+  &:hover,
+  &:focus {
+    color: rgba($color-black, 0.6);
+  }
+
+  &:active {
+    color: rgba($color-black, 0.3);
+  }
 }
 
 .main-nav__icon {
@@ -28,5 +55,18 @@
   width: 20px;
   height: 20px;
   vertical-align: middle;
-  background-color: $gray--light;
+  opacity: 0.2;
+  background-color: $color-black;
+  transition: 0.25s linear;
+}
+
+.main-nav__link:hover .main-nav__icon,
+.main-nav__link:focus .main-nav__icon {
+  opacity: 1;
+  background-color: $color-primary;
+}
+
+.main-nav__link:active .main-nav__icon {
+  opacity: 0.3;
+  background-color: $color-primary;
 }
