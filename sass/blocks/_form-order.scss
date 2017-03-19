@@ -185,13 +185,13 @@
   width: 100%;
   margin-bottom: 22px;
   padding: 14px 0;
-  border-bottom: 2px solid;
   box-sizing: border-box;
   font-size: $font-size--large;
   line-height: 18px;
   font-family: inherit;
   color: $color-black;
   border: none;
+  border-bottom: 2px solid;
   transition: border-bottom-color 0.25s;
 
   &:hover,
