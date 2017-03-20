@@ -37,7 +37,25 @@
   text-decoration: none;
 }
 
-.main-nav__item
+.main-nav__link {
+  @include container();
+
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: $color-black;
+  text-decoration: none;
+  transition: color 0.25s;
+
+  &:hover,
+  &:focus {
+    color: rgba($color-black, 0.6);
+  }
+
+  &:active {
+    color: rgba($color-black, 0.3);
+  }
+}
 
 .main-nav__icon {
   display: inline-block;
@@ -45,4 +63,15 @@
   height: 20px;
   vertical-align: middle;
   background-color: $gray--light;
+}
+
+.main-nav__link:hover .main-nav__icon,
+.main-nav__link:focus .main-nav__icon {
+  opacity: 1;
+  background-color: $color-primary;
+}
+
+.main-nav__link:active .main-nav__icon {
+  opacity: 0.3;
+  background-color: $color-primary;
 }
