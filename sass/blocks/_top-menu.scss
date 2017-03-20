@@ -25,18 +25,11 @@
   margin-top: 5px;
   font-size: 0;
   border: none;
-  background-color: $color-white;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background: $color-white url("../img/icon-menu-close.svg") no-repeat center / contain;
   cursor: pointer;
 
   &--closed {
     background-image: url("../img/icon-menu-open.svg");
-  }
-
-  &--opened {
-    background-image: url("../img/icon-menu-close.svg");
   }
 
   &--no-js {
