@@ -1,0 +1,28 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transform: translateY(-50%);
+  display: none;
+  padding: 30px;
+  padding-bottom: 45px;
+  border-top: 1px solid $gray--dark;
+  box-shadow: 0 5px 10px rgba(#000101, 0.25);
+  background-color: $color-white;
+}
+
+.modal__close {
+  display: none;
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}

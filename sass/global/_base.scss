@@ -1,0 +1,15 @@
+body {
+  min-width: 320px;
+  font-weight: normal;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-family: $font-family;
+  color: $color-base;
+  background-color: $color-white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}

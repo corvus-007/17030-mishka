@@ -1,0 +1,40 @@
+.group-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.group-controls__input {
+  @include sr-only();
+}
+
+.group-controls__label {
+  flex-grow: 1;
+  margin-right: 7px;
+  padding: 16px;
+  font-weight: 700;
+  font-size: $font-size--large;
+  line-height: 16px;
+  text-align: center;
+  border: 2px solid rgba($color-base, 0.1);
+  transition: border-color 0.25s;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: rgba($color-base, 0.3);
+  }
+
+  &:active {
+    border-color: $color-primary;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.group-controls__input:checked + .group-controls__label {
+  border-color: $color-primary;
+}

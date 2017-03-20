@@ -2,53 +2,54 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta content="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка / Форма</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="top-menu">
-        <button class="top-menu__toggle" type="button">Показать меню</button>
-        <div class="top-menu__logo">
-          <img class="top-menu__logo-image" src="http://placehold.it/86x35/2b8/fff" width="86" height="35" alt="Логотип интернет-магазина «Мишка»" />
-        </div>
-        <nav class="main-nav">
-          <ul class="main-nav__items">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Вязание на заказ</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                <svg class="main-nav__icon">
-                  <use xlink:href="#"></use>
-                </svg>
-                Поиск по сайту
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                <svg class="main-nav__icon">
-                  <use xlink:href="#"></use>
-                </svg>
-                Корзина: пока пуста
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <button class="top-menu__toggle top-menu__toggle--closed top-menu__toggle--no-js" type="button">Показать меню</button>
+        <a class="top-menu__logo" href="index.html">
+          <img class="top-menu__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»" />
+        </a>
       </div>
+      <nav class="main-nav main-nav--closed main-nav--no-js">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              <svg class="main-nav__icon">
+                <use xlink:href="#"></use>
+              </svg>
+              Поиск по сайту
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              <svg class="main-nav__icon">
+                <use xlink:href="#"></use>
+              </svg>
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <header class="page-header">
-      <h1 class="page-title">Каталог товаров</h1>
-      <p class="page-intro">
-        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
-      </p>
-    </header>
+    <div class="page-header">
+      <h1 class="page-title">Вязание на заказ</h1>
+    </div>
 
     <form class="form-order" name="form-order" action="https://echo.htmlacademy.ru/" method="post">
+      <p class="form-order__intro">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
       <fieldset class="form-order__section">
         <legend class="form-order__section-title">Тип</legend>
         <input class="form-order__custom-radio" type="radio" id="field-accessory" name="type" value="accessory" checked />
@@ -59,18 +60,18 @@
 
       <fieldset class="form-order__section">
         <legend class="form-order__section-title">Цвет</legend>
-        <input class="form-order__custom-chekbox" type="checkbox" id="field-white" name="color" value="white" checked />
-        <label class="form-order__chekbox-label" for="field-white">Белый</label>
-        <input class="form-order__custom-chekbox" type="checkbox" id="field-gray" name="color" value="gray" checked />
-        <label class="form-order__chekbox-label" for="field-gray">Серый</label>
-        <input class="form-order__custom-chekbox" type="checkbox" id="field-tiffani" name="color" value="tiffani" />
-        <label class="form-order__chekbox-label" for="field-tiffani">«Тиффани»</label>
-        <input class="form-order__custom-chekbox" type="checkbox" id="field-black" name="color" value="black" />
-        <label class="form-order__chekbox-label" for="field-black">Черный</label>
-        <input class="form-order__custom-chekbox" type="checkbox" id="field-pink" name="color" value="pink" />
-        <label class="form-order__chekbox-label" for="field-pink">Розовый</label>
-        <input class="form-order__custom-chekbox" type="checkbox" id="field-orange" name="color" value="orange" />
-        <label class="form-order__chekbox-label" for="field-orange">Оранжевый</label>
+        <input class="form-order__custom-checkbox" type="checkbox" id="field-white" name="color" value="white" checked />
+        <label class="form-order__checkbox-label" for="field-white">Белый</label>
+        <input class="form-order__custom-checkbox" type="checkbox" id="field-gray" name="color" value="gray" checked />
+        <label class="form-order__checkbox-label" for="field-gray">Серый</label>
+        <input class="form-order__custom-checkbox" type="checkbox" id="field-tiffani" name="color" value="tiffani" />
+        <label class="form-order__checkbox-label" for="field-tiffani">«Тиффани»</label>
+        <input class="form-order__custom-checkbox" type="checkbox" id="field-black" name="color" value="black" />
+        <label class="form-order__checkbox-label" for="field-black">Черный</label>
+        <input class="form-order__custom-checkbox" type="checkbox" id="field-pink" name="color" value="pink" />
+        <label class="form-order__checkbox-label" for="field-pink">Розовый</label>
+        <input class="form-order__custom-checkbox" type="checkbox" id="field-orange" name="color" value="orange" />
+        <label class="form-order__checkbox-label" for="field-orange">Оранжевый</label>
       </fieldset>
 
       <fieldset class="form-order__section">
@@ -137,5 +138,7 @@
         </p>
       </div>
     </footer>
+
+    <script src="js/app.js"></script>
   </body>
 </html>

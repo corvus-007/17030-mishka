@@ -1,0 +1,72 @@
+.about-us {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.about-us__inner {
+  @include container();
+}
+
+.about-us__title {
+  margin: 0;
+  margin-bottom: 27px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: $color-black;
+}
+
+.about-us__list {
+  @include clear-list();
+
+  color: $color-black;
+}
+
+.about-us__item {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: $font-size--large;
+  line-height: 20px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 35px;
+    margin-left: -5px;
+    margin-bottom: 17px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &--eco::before {
+    height: 37px;
+    background-image: url("../img/icon-feature-1.svg");
+  }
+
+  &--cheap::before {
+    height: 27px;
+    background-image: url("../img/icon-feature-2.svg");
+  }
+
+  &--likes::before {
+    height: 27px;
+    background-image: url("../img/icon-feature-3.svg");
+  }
+
+  &--love::before {
+    height: 34px;
+    background-image: url("../img/icon-feature-4.svg");
+  }
+
+  &--support::before {
+    height: 23px;
+    background-image: url("../img/icon-feature-5.svg");
+  }
+
+  &--gift::before {
+    height: 32px;
+    background-image: url("../img/icon-feature-6.svg");
+  }
+}

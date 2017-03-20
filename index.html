@@ -2,43 +2,44 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta content="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="top-menu">
-        <button class="top-menu__toggle" type="button">Показать меню</button>
-        <div class="top-menu__logo">
-          <img class="top-menu__logo-image" src="http://placehold.it/86x35/2b8/fff" width="86" height="35" alt="Логотип интернет-магазина «Мишка»" />
-        </div>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Вязание на заказ</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                <svg class="main-nav__icon">
-                  <use xlink:href="#"></use>
-                </svg>
-                Поиск по сайту
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                <svg class="main-nav__icon">
-                  <use xlink:href="#"></use>
-                </svg>
-                Корзина: пока пуста
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <button class="top-menu__toggle top-menu__toggle--closed top-menu__toggle--no-js" type="button">Показать меню</button>
+        <a class="top-menu__logo">
+          <img class="top-menu__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»" />
+        </a>
       </div>
+      <nav class="main-nav main-nav--closed main-nav--no-js">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              <svg class="main-nav__icon">
+                <use xlink:href="#"></use>
+              </svg>
+              Поиск по сайту
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              <svg class="main-nav__icon">
+                <use xlink:href="#"></use>
+              </svg>
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <h1 class="page-slogan">
@@ -46,17 +47,11 @@
     </h1>
 
     <div class="category-nav">
-      <a class="category-nav__item" href="#">
+      <a class="category-nav__item category-nav__item--accessory" href="#">
         <span class="category-nav__text">Предметы интерьера</span>
-        <svg class="category-nav__icon">
-          <use xlink:href="#"></use>
-        </svg>
       </a>
-      <a class="category-nav__item" href="#">
+      <a class="category-nav__item category-nav__item--toys" href="#">
         <span class="category-nav__text">Детские игрушки</span>
-        <svg class="category-nav__icon">
-          <use xlink:href="#"></use>
-        </svg>
       </a>
     </div>
 
@@ -85,7 +80,7 @@
             </tr>
           </tbody>
         </table>
-        <img class="featured-product__image" src="http://placehold.it/260x315/2b8/fff" width="260" height="315" alt="Вязаные корзинки" />
+        <img class="featured-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки" />
         <div class="featured-product__price">
           Цена: 990 руб.
         </div>
@@ -145,6 +140,7 @@
 
     <section class="contacts">
       <div class="contacts__inner">
+        <h2 class="contacts__title">Контакты</h2>
         <ul class="contacts__info">
           <li class="contacts__info-item">
             <span class="contacts__info-field">e-mail:</span>
@@ -160,10 +156,10 @@
           </li>
         </ul>
       </div>
-      <div class="contacts__map">
-        <img src="http://placehold.it/320x457/2b8/fff" width="320" height="457" alt="" />
+      <div class="contacts__map" id="contacts-map"></div>
+      <div class="contacts__footer">
+        <a class="button" href="#">Напишите нам</a>
       </div>
-      <a class="button" href="#">Напишите нам</a>
     </section>
 
     <footer class="site-footer">
@@ -205,10 +201,10 @@
     <div class="modal">
       <button class="modal__close" type="button" title="Закрыть">Закрыть</button>
       <div class="modal__title">Добавить в корзину</div>
-      <form class="cart-form" name="cart-form" action="https://echo.htmlacademy.ru/" method="get">
-        <p>Выберите размер:</p>
+      <form class="form-cart" name="form-cart" action="https://echo.htmlacademy.ru/" method="get">
+        <p class="form-cart__intro">Выберите размер:</p>
         <div class="group-controls">
-          <input class="group-controls__input" type="radio" id="field-size-s" name="size" value="S" />
+          <input class="group-controls__input" type="radio" id="field-size-s" name="size" value="S" checked />
           <label class="group-controls__label" for="field-size-s">S</label>
           <input class="group-controls__input" type="radio" id="field-size-м" name="size" value="M" />
           <label class="group-controls__label" for="field-size-м">М</label>
@@ -218,5 +214,9 @@
         <button class="button button--filled" type="submit">Добавить</button>
       </form>
     </div>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/map.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

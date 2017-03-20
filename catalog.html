@@ -2,114 +2,126 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta content="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка / Каталог</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="top-menu">
-        <button class="top-menu__toggle" type="button">Показать меню</button>
-        <div class="top-menu__logo">
-          <img class="top-menu__logo-image" src="http://placehold.it/86x35/2b8/fff" width="86" height="35" alt="Логотип интернет-магазина «Мишка»" />
-        </div>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Вязание на заказ</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                <svg class="main-nav__icon">
-                  <use xlink:href="#"></use>
-                </svg>
-                Поиск по сайту
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                <svg class="main-nav__icon">
-                  <use xlink:href="#"></use>
-                </svg>
-                Корзина: пока пуста
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <button class="top-menu__toggle top-menu__toggle--closed top-menu__toggle--no-js" type="button">Показать меню</button>
+        <a class="top-menu__logo" href="index.html">
+          <img class="top-menu__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»" />
+        </a>
       </div>
+      <nav class="main-nav main-nav--closed main-nav--no-js">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              <svg class="main-nav__icon">
+                <use xlink:href="#"></use>
+              </svg>
+              Поиск по сайту
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              <svg class="main-nav__icon">
+                <use xlink:href="#"></use>
+              </svg>
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <header class="page-header">
+    <div class="page-header">
       <h1 class="page-title">Каталог товаров</h1>
-    </header>
+    </div>
 
     <div class="catalog">
       <article class="product-card">
-        <div class="product-card__image-holder">
-          <img class="product-card__image" src="http://placehold.it/260x195/2b8/fff" width="260" height="195" alt="Зайчик-попрыгайчик" />
-        </div>
-        <h2 class="product-card__title">Зайчик-попрыгайчик</h2>
-        <ul class="product-card__parameters">
-          <li class="product-card__param">Рост 30 см</li>
-          <li class="product-card__param">вес 200 г</li>
-        </ul>
-        <div class="product-card__footer">
-          <span class="product-card__price">1 200 руб.</span>
-          <a class="product-card__add-to-cart" href="#" title="Добавить в корзину">
-            <svg class="product-card__icon">
-              <use xlink:href="#"></use>
-            </svg>
-          </a>
-        </div>
-      </article>
-      <article class="product-card">
-        <div class="product-card__image-holder">
-          <img class="product-card__image" src="http://placehold.it/260x195/2b8/fff" width="260" height="195" alt="Корзинка для белья" />
-        </div>
-        <h2 class="product-card__title">Корзинка для белья</h2>
-        <ul class="product-card__parameters">
-          <li class="product-card__param">Диаметр 15 см</li>
-          <li class="product-card__param">высота 10 см</li>
-        </ul>
-        <div class="product-card__footer">
-          <span class="product-card__price">690 руб.</span>
-          <a class="product-card__add-to-cart" href="#" title="Добавить в корзину">
-            <svg class="product-card__icon">
-              <use xlink:href="#"></use>
-            </svg>
-          </a>
+        <a class="product-card__image-holder" href="#">
+          <img class="product-card__image" src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик" />
+        </a>
+        <div class="product-card__info">
+          <h2 class="product-card__title">
+            <a class="product-card__title-link" href="#">Зайчик-попрыгайчик</a>
+          </h2>
+          <p class="product-card__parameters">
+            Рост 30 см, вес 200 г
+          </p>
+          <div class="product-card__footer">
+            <span class="product-card__price">1 200 руб.</span>
+            <a class="product-card__add-to-cart" href="#" title="Добавить в корзину">
+              <svg class="product-card__icon">
+                <use xlink:href="#"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </article>
       <article class="product-card">
-        <div class="product-card__image-holder">
-          <img class="product-card__image" src="http://placehold.it/260x195/2b8/fff" width="260" height="195" alt="Большая корзинка для игрушек" />
+        <a class="product-card__image-holder" href="#">
+          <img class="product-card__image" src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья" />
+        </a>
+        <div class="product-card__info">
+          <h2 class="product-card__title">
+            <a class="product-card__title-link"  href="#">Корзинка для белья</a>
+          </h2>
+          <p class="product-card__parameters">
+            Диаметр 15 см, высота 10 см
+          </p>
+          <div class="product-card__footer">
+            <span class="product-card__price">690 руб.</span>
+            <a class="product-card__add-to-cart" href="#" title="Добавить в корзину">
+              <svg class="product-card__icon">
+                <use xlink:href="#"></use>
+              </svg>
+            </a>
+          </div>
         </div>
-        <h2 class="product-card__title">Большая корзинка для игрушек</h2>
-        <ul class="product-card__parameters">
-          <li class="product-card__param">Диаметр 30 см</li>
-          <li class="product-card__param">высота 30 см</li>
-        </ul>
-        <div class="product-card__footer">
-          <span class="product-card__price">690 руб.</span>
-          <a class="product-card__add-to-cart" href="#" title="Добавить в корзину">
-            <svg class="product-card__icon">
-              <use xlink:href="#"></use>
-            </svg>
-          </a>
+      </article>
+      <article class="product-card">
+        <a class="product-card__image-holder" href="#">
+          <img class="product-card__image" src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек" />
+        </a>
+        <div class="product-card__info">
+          <h2 class="product-card__title">
+            <a class="product-card__title-link" href="#">Большая корзинка для игрушек</a>
+          </h2>
+          <p class="product-card__parameters">
+            Диаметр 30 см, высота 30 см
+          </p>
+          <div class="product-card__footer">
+            <span class="product-card__price">690 руб.</span>
+            <a class="product-card__add-to-cart" href="#" title="Добавить в корзину">
+              <svg class="product-card__icon">
+                <use xlink:href="#"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </article>
       <article class="special-card">
         <h2 class="special-card__title">Процесс производства</h2>
         <div class="special-card__video-holder">
-          <video class="special-card__video" poster="http://placehold.it/260x150/2b8/fff" width="260" height="195"></video>
+          <video class="special-card__video" poster="img/video-mobile@1x.jpg" width="260" height="150"></video>
           <button class="special-card__play" type="button">Смотреть</button>
         </div>
-        <p class="special-card__text">
-          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-        </p>
-        <a class="button" href="#">Сделать заказ</a>
+        <div class="special-card__info">
+          <p class="special-card__text">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+          </p>
+          <a class="button" href="#">Сделать заказ</a>
+        </div>
       </article>
     </div>
 
@@ -152,10 +164,10 @@
     <div class="modal">
       <button class="modal__close" type="button" title="Закрыть">Закрыть</button>
       <div class="modal__title">Добавить в корзину</div>
-      <form class="cart-form" name="cart-form" action="https://echo.htmlacademy.ru/" method="get">
-        <p>Выберите размер:</p>
+      <form class="form-cart" name="form-cart" action="https://echo.htmlacademy.ru/" method="get">
+        <p class="form-cart__intro">Выберите размер:</p>
         <div class="group-controls">
-          <input class="group-controls__input" type="radio" id="field-size-s" name="size" value="S" />
+          <input class="group-controls__input" type="radio" id="field-size-s" name="size" value="S" checked />
           <label class="group-controls__label" for="field-size-s">S</label>
           <input class="group-controls__input" type="radio" id="field-size-м" name="size" value="M" />
           <label class="group-controls__label" for="field-size-м">М</label>
@@ -165,5 +177,7 @@
         <button class="button button--filled" type="submit">Добавить</button>
       </form>
     </div>
+
+    <script src="js/app.js"></script>
   </body>
 </html>

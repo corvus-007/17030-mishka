@@ -1,0 +1,29 @@
+// Colors
+$gray--darken: #444444;
+$gray--dark: #c6c6c6;
+$gray: #e5e5e5;
+$gray--light: #ececec;
+$gray--lighten: #f1f1f1;
+$gray--lightest: #fafafa;
+
+$color-base: $gray--darken;
+$color-primary: #63d1bb;
+$color-white: #ffffff;
+$color-black: #000000;
+
+// Font
+$font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+$font-size: 15px;
+$font-size--small: 13px;
+$font-size--large: 17px;
+$line-height: 24px;
+
+// Dimensions
+$product-card-padding: 28px;
+$special-card-padding: 34px;
+
+// Breakpoints
+$mobile-up: "(min-width: 320px)";
+$mobile-only: "(max-width: 767px)";
+$tablet-up: "(min-width: 768px)";
+$desktop-up: "(min-width: 1150px)";
