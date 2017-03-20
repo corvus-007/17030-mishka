@@ -36,7 +36,7 @@
 }
 
 .form-order__custom-radio {
-  @include sr-only();
+  display: none;
 }
 
 .form-order__radio-label {
@@ -107,7 +107,7 @@
 }
 
 .form-order__custom-checkbox {
-  @include sr-only();
+  display: none;
 }
 
 .form-order__checkbox-label {
