@@ -3,13 +3,10 @@
 }
 
 .category-nav__item {
-  @include container();
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding: 22px $layout-mobile-offset;
   text-decoration: none;
   font-weight: 700;
   font-size: 19px;
@@ -61,4 +58,17 @@
 
 .category-nav__text {
   max-width: 110px;
+}
+
+@media #{$tablet-up} {
+  .category-nav {
+    @include container();
+    display: flex;
+  }
+
+  .category-nav__item {
+    flex-grow: 1;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -9,50 +9,63 @@
   <body>
     <header class="site-header">
       <div class="top-menu">
-        <button class="top-menu__toggle top-menu__toggle--closed top-menu__toggle--no-js" type="button">Показать меню</button>
-        <a class="top-menu__logo">
-          <img class="top-menu__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»" />
-        </a>
+        <nav class="main-nav main-nav--closed main-nav--no-js">
+          <a class="main-nav__logo">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»" />
+          </a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__user-list">
+            <li class="main-nav__user-item">
+              <a class="main-nav__user-link" href="#">
+                <svg class="main-nav__user-icon" width="18" height="18">
+                  <use xlink:href="#"></use>
+                </svg>
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="main-nav__user-item">
+              <a class="main-nav__user-link" href="#">
+                <svg class="main-nav__user-icon" width="21" height="18">
+                  <use xlink:href="#"></use>
+                </svg>
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__extra-list">
+            <li class="main-nav__extra-item">
+              <a class="main-nav__extra-link" href="#">Новые поступления</a>
+            </li>
+            <li class="main-nav__extra-item">
+              <a class="main-nav__extra-link" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <button class="main-nav__toggle" type="button">Показать меню</button>
+        </nav>
+        <span class="top-menu__note">Бесплатная доставка по России</span>
       </div>
-      <nav class="main-nav main-nav--closed main-nav--no-js">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
-              <svg class="main-nav__icon">
-                <use xlink:href="#"></use>
-              </svg>
-              Поиск по сайту
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
-              <svg class="main-nav__icon">
-                <use xlink:href="#"></use>
-              </svg>
-              Корзина: пока пуста
-            </a>
-          </li>
-        </ul>
-      </nav>
     </header>
 
-    <h1 class="page-slogan">
-      Милые штуки ручной работы для дома
-    </h1>
+    <div class="page-welcome">
+      <h1 class="page-slogan">
+        Милые штуки ручной работы для дома
+      </h1>
 
-    <div class="category-nav">
-      <a class="category-nav__item category-nav__item--accessory" href="#">
-        <span class="category-nav__text">Предметы интерьера</span>
-      </a>
-      <a class="category-nav__item category-nav__item--toys" href="#">
-        <span class="category-nav__text">Детские игрушки</span>
-      </a>
+      <div class="category-nav">
+        <a class="category-nav__item category-nav__item--accessory" href="#">
+          <span class="category-nav__text">Предметы интерьера</span>
+        </a>
+        <a class="category-nav__item category-nav__item--toys" href="#">
+          <span class="category-nav__text">Детские игрушки</span>
+        </a>
+      </div>
     </div>
 
     <section class="featured-product">

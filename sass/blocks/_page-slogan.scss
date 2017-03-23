@@ -2,13 +2,29 @@
   @include container();
 
   margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 70px;
-  padding-bottom: 120px;
+  margin-bottom: 120px;
+  // padding-left: $layout-mobile-offset;
+  // padding-right: $layout-mobile-offset;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
   color: $color-black;
-  text-align: center;
-  background: url("../img/hero-mobile@1x.jpg") no-repeat 50% -18px $gray--lightest;
+}
+
+@media #{$tablet-up} {
+  .page-slogan {
+    max-width: 500px;
+    margin-bottom: 370px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media #{$desktop-up} {
+  .page-slogan {
+    max-width: 620px;
+    margin-bottom: 350px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
