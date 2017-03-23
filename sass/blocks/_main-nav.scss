@@ -1,4 +1,14 @@
+.main-nav__list {
+  @include clear-list();
+}
+
+.main-nav__user-list {
+  @include clear-list();
+}
+
 .main-nav__extra-list {
+  @include clear-list();
+
   display: none;
 }
 
@@ -9,8 +19,6 @@
   }
 
   .main-nav__list {
-    @include clear-list();
-
     position: absolute;
     top: 100%;
     left: 0;
@@ -49,8 +57,6 @@
   }
 
   .main-nav__user-list {
-    @include clear-list();
-
     position: absolute;
     top: calc(100% + 160px);
     left: 0;
@@ -149,8 +155,6 @@
   }
 
   .main-nav__list {
-    @include clear-list();
-
     position: absolute;
     left: $layout-tablet-offset;
     top: 100%;
@@ -175,8 +179,6 @@
   }
 
   .main-nav__user-list {
-    @include clear-list();
-
     display: flex;
   }
 
@@ -213,8 +215,6 @@
   }
 
   .main-nav__extra-list {
-    @include clear-list();
-
     position: absolute;
     left: $layout-tablet-offset;
     top: 100%;

@@ -5,6 +5,9 @@
 
 .featured-product__inner {
   @include container();
+
+  position: relative;
+  padding-bottom: 100px;
 }
 
 .featured-product__header {
@@ -25,6 +28,10 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $color-primary;
+}
+
+.featured-product__info {
+
 }
 
 .featured-product__description {
@@ -54,14 +61,107 @@
 
 }
 
-.featured-product__image {
-  margin-bottom: 28px;
-}
-
 .featured-product__price {
   margin-bottom: 28px;
   font-weight: 700;
   font-size: $font-size--large;
   line-height: $line-height;
   text-align: center;
+}
+
+.featured-product__footer {
+  position: absolute;
+  left: $layout-mobile-offset;
+  right: $layout-mobile-offset;
+  bottom: 0;
+}
+
+.featured-product__image {
+  margin-bottom: 28px;
+}
+
+@media #{$tablet-up} {
+  .featured-product__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+
+  .featured-product__header {
+    position: absolute;
+    top: 0;
+    left: $layout-tablet-offset;
+    right: $layout-tablet-offset;
+    display: flex;
+    align-items: center;
+  }
+
+  .featured-product__title {
+    flex-grow: 1;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .featured-product__label {
+    width: 70px;
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .featured-product__info {
+    flex-basis: 290px;
+  }
+
+  .featured-product__description {
+    line-height: 30px;
+  }
+
+  .featured-product__image {
+    flex-basis: 333px;
+    margin-bottom: 0;
+  }
+
+  .featured-product__footer {
+    position: static;
+  }
+}
+
+@media #{$desktop-up} {
+  .featured-product__inner {
+    padding-top: 0;
+  }
+
+  .featured-product__info {
+    position: relative;
+    padding-top: 150px;
+    margin-left: $column-desktop-size;
+  }
+
+  .featured-product__header {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: auto;
+  }
+
+  .featured-product__title {
+    white-space: nowrap;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .featured-product__label {
+    width: $column-desktop-size;
+    box-sizing: border-box;
+    position: absolute;
+    right: 100%;
+  }
+
+  .featured-product__image {
+    flex-basis: 525px;
+  }
 }
