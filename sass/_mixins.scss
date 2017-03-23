@@ -5,13 +5,13 @@
   padding-right: $layout-mobile-offset;
 
   @media #{$tablet-up} {
-    max-width: 668px;
+    width: 668px;
     padding-left: $layout-tablet-offset;
     padding-right: $layout-tablet-offset;
   }
 
   @media #{$desktop-up} {
-    max-width: 1050px;
+    width: 1050px;
   }
 }
 
