@@ -22,7 +22,7 @@
 
 @media #{$desktop-up} {
   .page-slogan {
-    max-width: 620px;
+    max-width: calc(#{$column-desktop-size} * 4);
     margin-bottom: 350px;
     font-size: 53px;
     line-height: 57px;
