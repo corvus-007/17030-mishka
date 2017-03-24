@@ -54,3 +54,31 @@
     background-position: center;
   }
 }
+
+@media #{$tablet-up} {
+  .slider {
+    order: 1;
+    margin-top: 50px;
+  }
+
+  .slider__content {
+    margin-bottom: 0;
+  }
+
+  .slider__arrows {
+    width: $column-desktop-size;
+    margin-left: auto;
+    margin-bottom: 0;
+    outline: 1px solid tomato;
+  }
+
+  .slider__arrow {
+    border: none;
+  }
+}
+
+@media #{$desktop-up} {
+  .slider {
+    margin-left: $column-desktop-size;
+  }
+}
