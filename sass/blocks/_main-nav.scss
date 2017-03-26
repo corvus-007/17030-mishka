@@ -2,14 +2,62 @@
   @include clear-list();
 }
 
+.main-nav__link {
+  display: block;
+  color: $color-black;
+  text-decoration: none;
+  transition: color 0.25s;
+
+  &:hover,
+  &:focus {
+    color: #666666;
+  }
+
+  &:active {
+    color: #b2b2b2;
+  }
+}
+
 .main-nav__user-list {
   @include clear-list();
+}
+
+.main-nav__user-link {
+  display: block;
+  color: $color-black;
+  text-decoration: none;
+  transition: color 0.25s;
+
+  &:hover,
+  &:focus {
+    color: #666666;
+  }
+
+  &:active {
+    color: #b2b2b2;
+  }
 }
 
 .main-nav__extra-list {
   @include clear-list();
 
   display: none;
+}
+
+.main-nav__extra-link {
+  display: block;
+  color: $color-black;
+  text-decoration: none;
+  transition: color 0.25s;
+
+  &:hover,
+  &:focus {
+    color: #666666;
+  }
+
+  &:active {
+    color: #b2b2b2;
+  }
 }
 
 @media #{$mobile-only} {
@@ -40,20 +88,7 @@
   }
 
   .main-nav__link {
-    display: block;
     padding: 28px 30px;
-    color: $color-black;
-    text-decoration: none;
-    transition: color 0.25s;
-
-    &:hover,
-    &:focus {
-      color: rgba($color-black, 0.6);
-    }
-
-    &:active {
-      color: rgba($color-black, 0.3);
-    }
   }
 
   .main-nav__user-list {
@@ -78,20 +113,7 @@
   }
 
   .main-nav__user-link {
-    display: block;
     padding: 28px 30px;
-    color: $color-black;
-    text-decoration: none;
-    transition: color 0.25s;
-
-    &:hover,
-    &:focus {
-      color: rgba($color-black, 0.6);
-    }
-
-    &:active {
-      color: rgba($color-black, 0.3);
-    }
   }
 
   .main-nav__user-icon {
