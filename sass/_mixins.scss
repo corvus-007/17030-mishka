@@ -1,17 +1,17 @@
 @mixin container() {
-  margin-left: auto;
-  margin-right: auto;
   padding-left: $layout-mobile-offset;
   padding-right: $layout-mobile-offset;
 
   @media #{$tablet-up} {
-    width: 668px;
+    max-width: 668px;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: $layout-tablet-offset;
     padding-right: $layout-tablet-offset;
   }
 
   @media #{$desktop-up} {
-    width: 1050px;
+    max-width: 1050px;
   }
 }
 
