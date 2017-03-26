@@ -40,25 +40,26 @@
 }
 
 .featured-product__parameters {
+  width: 100%;
   margin-bottom: 28px;
+  line-height: 20px;
 }
 
 .featured-product__param-row {
-  border-bottom: 1px solid $gray--light;
-}
 
-.featured-product__param-field,
-.featured-product__param-value {
-  padding: 10px 0;
-  vertical-align: top;
 }
 
 .featured-product__param-field {
+  padding: 10px 0;
   padding-right: 30px;
+  vertical-align: top;
+  border-bottom: 1px solid $gray--light;
 }
 
 .featured-product__param-value {
-
+  padding: 10px 0;
+  vertical-align: top;
+  border-bottom: 1px solid $gray--light;
 }
 
 .featured-product__price {
@@ -74,6 +75,10 @@
   left: $layout-mobile-offset;
   right: $layout-mobile-offset;
   bottom: 0;
+}
+
+.featured-product__button {
+  width: 100%;
 }
 
 .featured-product__image {
@@ -100,6 +105,7 @@
 
   .featured-product__title {
     flex-grow: 1;
+    margin-bottom: 0;
     font-size: 43px;
     line-height: 50px;
   }
@@ -113,15 +119,22 @@
   }
 
   .featured-product__info {
-    flex-basis: 290px;
+    width: 50%;
+    padding-right: 45px;
+    box-sizing: border-box;
   }
 
   .featured-product__description {
+    font-size: $font-size--large;
     line-height: 30px;
   }
 
+  .featured-product__parameters {
+    margin-bottom: 50px;
+  }
+
   .featured-product__image {
-    flex-basis: 333px;
+    width: 50%;
     margin-bottom: 0;
   }
 
@@ -137,15 +150,17 @@
 
   .featured-product__info {
     position: relative;
-    padding-top: 150px;
-    margin-left: $column-desktop-size;
+    padding-top: 50px;
+    padding-left: $column-desktop-size;
+    padding-right: 58px;
   }
 
   .featured-product__header {
-    position: absolute;
-    top: 50px;
+    position: relative;
     left: 0;
-    right: auto;
+    right: 0;
+    width: 100%;
+    margin-bottom: 50px;
   }
 
   .featured-product__title {
@@ -155,13 +170,17 @@
   }
 
   .featured-product__label {
-    width: $column-desktop-size;
-    box-sizing: border-box;
     position: absolute;
     right: 100%;
+    width: $column-desktop-size;
+    box-sizing: border-box;
+  }
+
+  .featured-product__parameters {
+    margin-bottom: 105px;
   }
 
   .featured-product__image {
-    flex-basis: 525px;
+
   }
 }
