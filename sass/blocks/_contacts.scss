@@ -4,11 +4,17 @@
 }
 
 .contacts__inner {
-  @include container();
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .contacts__title {
-  margin: 0;
+
+  padding-left: $layout-mobile-offset;
+  padding-right: $layout-mobile-offset;
+
+  flex-grow: 1;
+  margin-top: 0;
   margin-bottom: 27px;
   font-weight: 700;
   font-size: 18px;
@@ -19,7 +25,12 @@
 .contacts__info {
   @include clear-list();
 
+  padding-left: $layout-mobile-offset;
+  padding-right: $layout-mobile-offset;
+
+  flex-grow: 1;
   margin-bottom: 40px;
+  line-height: 30px;
 }
 
 .contacts__info-item {
@@ -40,6 +51,8 @@
 }
 
 .contacts__map {
+  order: 1;
+  width: 100%;
   height: 460px;
   margin-bottom: 40px;
   overflow: hidden;
@@ -47,4 +60,107 @@
 
 .contacts__footer {
   @include container();
+
+  order: 2;
+  flex-grow: 1;
+}
+
+@media #{$tablet-up} {
+  .contacts__inner {
+
+  }
+
+  .contacts__title {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+    font-size: 43px;
+    line-height: 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: $layout-tablet-offset;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 47px;
+      height: 81px;
+      background: url("../img/icon-flag.svg") no-repeat center / contain;
+    }
+  }
+
+  .contacts__info {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+    font-size: $font-size--large;
+  }
+
+  .contacts__info-item {
+    width: 50%;
+    margin-bottom: 0;
+    padding-right: 35px;
+    box-sizing: border-box;
+  }
+
+  .contacts__footer {
+    text-align: center;
+  }
+}
+
+
+@media #{$desktop-up} {
+  .contacts__inner {
+    @include clearfix();
+
+    display: block;
+
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $layout-tablet-offset;
+    padding-right: $layout-tablet-offset;
+
+  }
+
+  .contacts__title {
+    width: auto;
+    margin-left: $column-desktop-size;
+    padding: 0;
+    padding-top: 50px;
+    font-size: 53px;
+    line-height: 57px;
+
+    &::before {
+      top: 50px;
+      right: 100%;
+      width: $column-desktop-size;
+    }
+  }
+
+  .contacts__map {
+    float: right;
+    width: 50%;
+    margin-left: 45px;
+  }
+
+  .contacts__info {
+    width: auto;
+    margin-left: $column-desktop-size;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .contacts__info-item {
+    width: auto;
+    margin-bottom: 50px;
+    padding-right: 0;
+  }
+
+  .contacts__footer {
+    margin-left: $column-desktop-size;
+    padding: 0;
+    text-align: left;
+  }
 }
