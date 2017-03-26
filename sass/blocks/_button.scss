@@ -1,10 +1,9 @@
 .button {
   display: inline-block;
-  width: 100%;
   padding-top: 15px;
   padding-bottom: 14px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
   box-sizing: border-box;
   font-weight: 700;
   font-size: $font-size--large;
@@ -30,5 +29,11 @@
   &:active {
     color: rgba($color-white, 0.3);
     background-color: $color-base;
+  }
+}
+
+@media #{$mobile-only} {
+  .button {
+    width: 100%;
   }
 }
