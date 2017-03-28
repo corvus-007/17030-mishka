@@ -30,6 +30,7 @@
 }
 
 .site-footer__socials-link {
+  text-decoration: none;
   color: #231F20;
   transition: color 0.25s, opacity 0.25s;
 
@@ -111,6 +112,7 @@
 
   .site-footer__logo {
     display: inline-block;
+    text-decoration: none;
     color: $color-base;
     transition: color 0.25s, opacity 0.25s;
 
