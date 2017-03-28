@@ -3,4 +3,14 @@
   padding-top: 73px;
   padding-bottom: 73px;
   background-color: $gray--lighten;
+
+  @media #{$tablet-up} {
+    margin-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  @media #{$desktop-up} {
+    margin-bottom: 120px;
+  }
 }
