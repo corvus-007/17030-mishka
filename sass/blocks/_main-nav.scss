@@ -38,6 +38,28 @@
   }
 }
 
+
+.main-nav__user-icon {
+  display: inlisne-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  fill: $color-base;
+  fill-opacity: 0.2;
+  transition: fill 0.25s, fill-opacity 0.25s;
+}
+
+.main-nav__user-link:hover .main-nav__user-icon,
+.main-nav__user-link:focus .main-nav__user-icon {
+  fill: $color-primary;
+  fill-opacity: 1;
+}
+
+.main-nav__user-link:active .main-nav__user-icon {
+  fill: $color-primary;
+  fill-opacity: 0.3;
+}
+
 .main-nav__extra-list {
   @include clear-list();
 
