@@ -2,4 +2,9 @@
   @include container();
 
   padding-bottom: 58px;
+
+  @media #{$desktop-up} {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

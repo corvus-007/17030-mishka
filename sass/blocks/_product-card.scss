@@ -60,3 +60,38 @@
   vertical-align: middle;
   background-color: $gray--light;
 }
+
+@media #{$tablet-up} {
+  .product-card {
+    display: flex;
+    margin-bottom: 55px;
+  }
+
+  .product-card__image-holder {
+    width: 50%;
+    min-width: calc(#{$column-tablet-size} * 2);
+  }
+
+  .product-card__info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-left: none;
+  }
+
+  .product-card__title {
+    font-size: 20px;
+  }
+
+  .product-card__parameters {
+    font-size: $font-size;
+  }
+
+  .product-card__footer {
+    margin-top: auto;
+  }
+
+  .product-card__price {
+    font-size: $font-size--large;
+  }
+}

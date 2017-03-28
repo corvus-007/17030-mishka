@@ -1,15 +1,17 @@
 .special-card {
-  border: 1px solid $gray--light;
+  // border: 1px solid $gray--light;
 }
 
 .special-card__title {
   position: relative;
   margin: 0;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   padding-right: $special-card-padding;
   padding-left: 90px;
   font-size: $font-size--large;
+  border: 1px solid $gray--light;
+  border-bottom: none;
 
   &::before {
     content: "";
@@ -18,7 +20,7 @@
     bottom: 0;
     left: $special-card-padding;
     width: 32px;
-    height: 22px;
+    height: 24px;
     margin: auto;
     background: url("../img/icon-video.svg") no-repeat center / contain;
   }
@@ -50,10 +52,47 @@
 
 .special-card__info {
   padding: $special-card-padding;
+  border: 1px solid $gray--light;
+  border-top: none;
 }
 
 .special-card__text {
   margin: 0;
   margin-bottom: 23px;
   font-size: $font-size--small;
+}
+
+.special-card__button {
+  width: 100%;
+}
+
+@media #{$tablet-up} {
+  .special-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .special-card__title {
+    font-size: 20px;
+    padding: 40px;
+    padding-left: 105px;
+    padding-bottom: 35px;
+  }
+
+  .special-card__video-holder {
+    order: -1;
+  }
+
+  .special-card__info {
+    padding-top: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 45px;
+  }
+
+  .special-card__text {
+    margin-bottom: 30px;
+    font-size: $font-size;
+    line-height: 30px;
+  }
 }
