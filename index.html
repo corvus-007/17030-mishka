@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="site-header">
       <div class="top-menu">
         <nav class="main-nav main-nav--closed main-nav--no-js">
           <a class="main-nav__logo">
-            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»" />
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">
           </a>
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -70,11 +70,11 @@
 
     <section class="featured-product">
       <div class="featured-product__inner">
+        <div class="featured-product__header">
+          <h2 class="featured-product__title">Вязаные корзинки</h2>
+          <span class="featured-product__label">Товар недели</span>
+        </div>
         <div class="featured-product__info">
-          <div class="featured-product__header">
-            <h2 class="featured-product__title">Вязаные корзинки</h2>
-            <span class="featured-product__label">Товар недели</span>
-          </div>
           <p class="featured-product__description">
             Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
           </p>
@@ -101,7 +101,11 @@
             <a class="featured-product__button button" href="#">Заказать</a>
           </div>
         </div>
-        <img class="featured-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки" />
+        <picture>
+          <source media="(min-width: 1150px)" srcset="//placehold.it/525x636/6bd/fff">
+          <source media="(min-width: 768px)" srcset="//placehold.it/333x404/6db/fff">
+          <img class="featured-product__image" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
+        </picture>
       </div>
     </section>
 
@@ -228,11 +232,11 @@
       <form class="form-cart" name="form-cart" action="https://echo.htmlacademy.ru/" method="get">
         <p class="form-cart__intro">Выберите размер:</p>
         <div class="group-controls">
-          <input class="group-controls__input" type="radio" id="field-size-s" name="size" value="S" checked />
+          <input class="group-controls__input" type="radio" id="field-size-s" name="size" value="S" checked>
           <label class="group-controls__label" for="field-size-s">S</label>
-          <input class="group-controls__input" type="radio" id="field-size-м" name="size" value="M" />
+          <input class="group-controls__input" type="radio" id="field-size-м" name="size" value="M">
           <label class="group-controls__label" for="field-size-м">М</label>
-          <input class="group-controls__input" type="radio" id="field-size-l" name="size" value="L" />
+          <input class="group-controls__input" type="radio" id="field-size-l" name="size" value="L">
           <label class="group-controls__label" for="field-size-l">L</label>
         </div>
         <button class="button button--filled" type="submit">Добавить</button>
