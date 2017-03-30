@@ -8,11 +8,11 @@
 }
 
 .reviews__title {
+  @include mobile-title-typography();
+
   margin: 0;
   margin-bottom: 27px;
   font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
   color: $color-black;
 }
 
@@ -56,9 +56,9 @@
   }
 
   .reviews__title {
+    @include tablet-title-typography();
+
     margin-bottom: 0;
-    font-size: 43px;
-    line-height: 50px;
   }
 
   .reviews__button {
@@ -79,8 +79,8 @@
   }
 
   .reviews__title {
+    @include tablet-title-typography();
+
     margin-left: $column-desktop-size;
-    font-size: 53px;
-    line-height: 57px;
   }
 }

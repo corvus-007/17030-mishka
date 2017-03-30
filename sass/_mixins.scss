@@ -16,7 +16,6 @@
 }
 
 @mixin clearfix() {
-
   &::after {
     content: "";
     display: table;
@@ -28,4 +27,19 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@mixin mobile-title-typography {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+@mixin tablet-title-typography {
+  font-size: 43px;
+  line-height: 50px;
+}
+
+@mixin desktop-title-typography {
+  font-size: 53px;
+  line-height: 57px;
 }

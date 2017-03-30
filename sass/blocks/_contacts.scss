@@ -66,13 +66,13 @@
   }
 
   .contacts__title {
+    @include tablet-title-typography();
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     margin-bottom: 50px;
-    font-size: 43px;
-    line-height: 50px;
 
     &::after {
       content: "";
@@ -114,14 +114,14 @@
   }
 
   .contacts__title {
+    @include desktop-title-typography();
+
     justify-content: flex-start;
     width: calc(#{$column-desktop-size} * 3);
     margin: 0;
     margin-bottom: 50px;
     padding: 0;
     padding-right: 45px;
-    font-size: 53px;
-    line-height: 57px;
     box-sizing: border-box;
 
     &::after {

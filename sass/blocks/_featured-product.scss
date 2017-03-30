@@ -16,10 +16,10 @@
 }
 
 .featured-product__title {
+  @include mobile-title-typography();
+
   margin: 0;
   margin-bottom: 4px;
-  font-size: 25px;
-  line-height: 30px;
   color: $color-black;
 }
 
@@ -105,10 +105,10 @@
   }
 
   .featured-product__title {
+    @include tablet-title-typography();
+
     flex-grow: 1;
     margin-bottom: 0;
-    font-size: 43px;
-    line-height: 50px;
   }
 
   .featured-product__label {
@@ -166,8 +166,7 @@
   }
 
   .featured-product__title {
-    font-size: 53px;
-    line-height: 57px;
+    @include desktop-title-typography();
   }
 
   .featured-product__label {

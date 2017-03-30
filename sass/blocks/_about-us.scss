@@ -8,11 +8,11 @@
 }
 
 .about-us__title {
+  @include mobile-title-typography();
+
   margin: 0;
   margin-bottom: 27px;
   font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
   color: $color-black;
 }
 
@@ -79,9 +79,9 @@
 
 @media #{$tablet-up} {
   .about-us__title {
+    @include tablet-title-typography();
+
     margin-bottom: 50px;
-    font-size: 43px;
-    line-height: 50px;
   }
 
   .about-us__lists-wrapper {
@@ -104,10 +104,10 @@
 
 @media #{$desktop-up} {
   .about-us__title {
+    @include desktop-title-typography();
+
     margin-left: $column-desktop-size;
     margin-bottom: 50px;
-    font-size: 53px;
-    line-height: 57px;
   }
 
   .about-us__lists-wrapper {
