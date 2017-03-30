@@ -1,4 +1,5 @@
 .site-footer {
+  margin-top: 40px;
   color: $color-black;
   background-color: $gray--lighten;
 }
@@ -102,6 +103,10 @@
 }
 
 @media #{$tablet-up} {
+  .site-footer {
+    margin-top: 55px;
+  }
+
   .site-footer__inner {
     display: flex;
     align-items: center;
@@ -140,5 +145,11 @@
     padding-top: 0;
     padding-bottom: 0;
     border-top: none;
+  }
+}
+
+@media #{$desktop-up} {
+  .site-footer {
+    margin-top: 105px;
   }
 }
