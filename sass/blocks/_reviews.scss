@@ -79,7 +79,7 @@
   }
 
   .reviews__title {
-    @include tablet-title-typography();
+    @include desktop-title-typography();
 
     margin-left: $column-desktop-size;
   }
