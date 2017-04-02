@@ -30,6 +30,12 @@
     color: rgba($color-white, 0.3);
     background-color: $color-base;
   }
+
+  &--filled {
+    border-color: transparent;
+    color: $color-white;
+    background-color: $color-primary;
+  }
 }
 
 @media #{$mobile-only} {
