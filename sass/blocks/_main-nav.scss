@@ -1,3 +1,16 @@
+.main-nav__logo-link[href] {
+  transition: opacity 0.25s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .main-nav__list {
   @include clear-list();
 }
@@ -38,9 +51,8 @@
   }
 }
 
-
 .main-nav__user-icon {
-  display: inlisne-block;
+  display: inline-block;
   width: 20px;
   height: 20px;
   vertical-align: middle;
@@ -85,6 +97,9 @@
 @media #{$mobile-only} {
   .main-nav {
     padding: 22px 0;
+  }
+
+  .main-nav__logo {
     text-align: center;
   }
 
@@ -93,7 +108,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 2;
     display: block;
     background-color: $color-white;
   }
@@ -106,16 +121,17 @@
     font-weight: 700;
     font-size: $font-size--large;
     line-height: $line-height;
-    box-shadow: 0 -1px 0 $gray--light inset;
+    border-bottom: 1px solid $gray--light;
   }
 
   .main-nav__link {
-    padding: 28px 30px;
+    padding: $layout-mobile-offset;
+    padding-left: calc(#{$layout-mobile-offset} + 45px);
   }
 
   .main-nav__user-list {
     position: absolute;
-    top: calc(100% + 160px);
+    top: calc(100% + 169px);
     left: 0;
     right: 0;
     z-index: 1;
@@ -131,30 +147,34 @@
     font-weight: 700;
     font-size: $font-size--large;
     line-height: $line-height;
-    box-shadow: 0 -1px 0 $gray--light inset;
+    border-bottom: 1px solid $gray--light;
   }
 
   .main-nav__user-link {
-    padding: 28px 30px;
+    position: relative;
+    padding: $layout-mobile-offset;
+    padding-left: calc(#{$layout-mobile-offset} + 45px);
   }
 
   .main-nav__user-icon {
+    position: absolute;
+    top: 0;
+    left: $layout-mobile-offset;
+    bottom: 0;
     display: inline-block;
     width: 20px;
     height: 20px;
+    margin: auto;
     vertical-align: middle;
-    background-color: $gray--light;
   }
 
   .main-nav__user-link:hover .main-nav__user-icon,
   .main-nav__user-link:focus .main-nav__user-icon {
     opacity: 1;
-    background-color: $color-primary;
   }
 
   .main-nav__user-link:active .main-nav__user-icon {
     opacity: 0.3;
-    background-color: $color-primary;
   }
 
   .main-nav__toggle {
@@ -184,9 +204,9 @@
 @media #{$tablet-up} {
   .main-nav {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    min-height: 88px;
   }
 
   .main-nav__logo {
@@ -194,15 +214,18 @@
     vertical-align: middle;
   }
 
+  .main-nav__logo-link {
+    text-decoration: none;
+  }
+
   .main-nav__toggle {
     display: none;
   }
 
   .main-nav__list {
-    position: absolute;
-    left: $layout-tablet-offset;
-    top: 100%;
     display: flex;
+    flex-basis: 350px;
+    order: 1;
     margin-top: 20px;
   }
 
@@ -228,40 +251,64 @@
 
   .main-nav__user-item {
     font-weight: 700;
-    font-size: $font-size;
+    font-size: $font-size--large;
     line-height: $line-height;
+    border-left: 1px solid $gray--light;
   }
 
   .main-nav__user-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: $color-black;
     text-decoration: none;
+
+
+    &--search {
+      font-size: 0;
+    }
+  }
+
+  .main-nav__user-icon {
+    margin-left: 30px;
+    margin-right: 30px;
   }
 }
 
 @media #{$desktop-up} {
+  .main-nav__user-list {
+    flex-basis: 350px;
+  }
+
   .main-nav__list {
     position: static;
+    flex-basis: 375px;
     order: -1;
     margin-top: 0;
   }
 
   .main-nav__item {
-    margin-right: 18px;
-    padding-right: 18px;
-    box-shadow: -1px 0 0 $gray--light inset;
+    margin-right: 0;
     font-size: $font-size--large;
+    border-right: 1px solid $gray--light;
 
     &:last-child {
-      margin-right: 0;
-      padding-right: 0;
-      box-shadow: none;
+      border-right: none;
     }
   }
 
+  .main-nav__link {
+    padding: 32px 30px;
+  }
+
+  .main-nav__item:first-child .main-nav__link {
+    padding-left: 0;
+  }
+
+  .main-nav__item:last-child .main-nav__link {
+    padding-right: 0;
+  }
+
   .main-nav__extra-list {
-    position: absolute;
-    left: $layout-tablet-offset;
-    top: 100%;
     display: flex;
     margin-top: 20px;
   }

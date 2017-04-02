@@ -1,4 +1,26 @@
 .site-header {
+  position: relative;
   color: $color-black;
-  box-shadow: 0 -1px 0 $gray--light inset;
+  background-color: $gray--lighten;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 78px;
+    background-color: $color-white;
+    border-bottom: 1px solid $gray--light;
+  }
+
+  @media #{$tablet-up} {
+    &::before {
+      height: 88px;
+    }
+  }
+}
+
+.homepage .site-header {
+  background-color: $gray--lightest;
 }

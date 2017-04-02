@@ -2,20 +2,12 @@
   padding-top: 70px;
   text-align: center;
   background-color: $gray--lightest;
+  background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% -20px;
-  background-image: url("../img/hero-mobile@1x.jpg");
-}
 
-@media #{$tablet-up} {
-  .page-welcome {
-    padding-top: 160px;
+  @media #{$tablet-up} {
+    padding-top: 100px;
     background-position: center;
-  }
-}
-
-@media #{$desktop-up} {
-  .page-welcome {
-    padding-top: 160px;
   }
 }
