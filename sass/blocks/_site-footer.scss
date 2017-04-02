@@ -117,6 +117,7 @@
 
   .site-footer__logo {
     display: inline-block;
+    flex-basis: calc(100% / 3);
     text-decoration: none;
     color: $color-base;
     transition: color 0.25s, opacity 0.25s;
@@ -137,11 +138,13 @@
   }
 
   .site-footer__socials {
+    flex-basis: calc(100% / 3);
     padding-top: 0;
     padding-bottom: 0;
   }
 
   .site-footer__developer {
+    flex-basis: calc(100% / 3);
     padding-top: 0;
     padding-bottom: 0;
     border-top: none;
