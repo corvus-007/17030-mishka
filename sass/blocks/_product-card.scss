@@ -15,16 +15,16 @@
 .product-card__info {
   padding: $product-card-padding;
   border: 1px solid $gray--light;
-  transition: box-shadow 0.25s;
   background-color: $color-white;
+  transition: box-shadow 0.25s;
 }
 
 .product-card:hover .product-card__info {
-  box-shadow: 0 6px 10px rgba(#000000, 0.1);
+  box-shadow: $card-shadow-hover;
 }
 
 .product-card:active .product-card__info {
-  box-shadow: 0 3px 5px rgba(#000000, 0.1);
+  box-shadow: $card-shadow-active;
 }
 
 .product-card__title {
