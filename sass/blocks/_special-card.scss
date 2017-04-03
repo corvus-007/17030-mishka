@@ -98,18 +98,18 @@
 
   .special-card__title {
     flex-grow: 1;
-    font-size: 20px;
     padding: 40px;
     padding-left: 105px;
     padding-bottom: 35px;
+    font-size: 20px;
   }
 
   .special-card:hover .special-card__title {
-    box-shadow: 0 6px 10px rgba(#000000, 0.1);
+    box-shadow: $card-shadow-hover;
   }
 
   .special-card:active .special-card__title {
-    box-shadow: 0 3px 5px rgba(#000000, 0.1);
+    box-shadow: $card-shadow-active;
   }
 
   .special-card__video-holder {
@@ -168,8 +168,8 @@
     padding-left: 80px;
     padding-right: 55px;
     padding-bottom: 60px;
-    box-sizing: border-box;
     border-left: none;
+    box-sizing: border-box;
   }
 
   .special-card__text {
