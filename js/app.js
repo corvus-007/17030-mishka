@@ -6,7 +6,6 @@ window.addEventListener('DOMContentLoaded', function() {
   var triggerModalItems = document.querySelectorAll('.js-trigger-modal');
 
   mainNav.classList.remove('main-nav--no-js');
-  modal.classList.remove('modal--no-js');
 
   if (toggleMenu) {
     toggleMenu.addEventListener('click', function(event) {
@@ -16,6 +15,8 @@ window.addEventListener('DOMContentLoaded', function() {
   }
 
   if (modal) {
+    modal.classList.remove('modal--no-js');
+
     Array.prototype.forEach.call(triggerModalItems, function(triggerModal) {
       console.log(triggerModal)
       triggerModal.addEventListener('click', function(event) {
