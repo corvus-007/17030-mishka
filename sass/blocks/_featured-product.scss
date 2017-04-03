@@ -87,7 +87,8 @@
 
 @media #{$tablet-up} {
   .featured-product {
-    padding-top: 45px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .featured-product__inner {
@@ -101,7 +102,7 @@
     display: flex;
     align-items: center;
     flex-grow: 1;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 
   .featured-product__title {
