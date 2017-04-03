@@ -128,7 +128,7 @@
 
   .main-nav__link {
     padding: $layout-mobile-offset;
-    padding-left: calc(#{$layout-mobile-offset} + 45px);
+    padding-left: ($layout-mobile-offset + 45px);
   }
 
   .main-nav__user-list {
@@ -155,7 +155,7 @@
   .main-nav__user-link {
     position: relative;
     padding: $layout-mobile-offset;
-    padding-left: calc(#{$layout-mobile-offset} + 45px);
+    padding-left: ($layout-mobile-offset + 45px);
   }
 
   .main-nav__user-icon {
