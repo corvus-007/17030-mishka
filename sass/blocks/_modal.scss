@@ -1,16 +1,58 @@
 .modal {
   position: fixed;
-  top: 50%;
+  top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   z-index: 10;
-  transform: translateY(-50%);
-  display: none;
+  display: flex;
+  background-color: rgba($color-white, 0.9);
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+  transition: opacity 0.25s;
+
+  &--closed {
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s, visibility 0s 0.25s;
+  }
+
+  &--no-js {
+    cursor: default;
+
+    &:target {
+      display: flex;
+      pointer-events: auto;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.modal__dialog {
+  transform: scale(1);
+  max-width: 566px;
+  width: 100%;
+  margin: auto;
   padding: 30px;
   padding-bottom: 45px;
-  border-top: 1px solid $gray--dark;
+  border: 1px solid $gray--dark;
   box-shadow: 0 5px 10px rgba(#000101, 0.25);
   background-color: $color-white;
+  box-sizing: border-box;
+  cursor: default;
+  transition: transform 0.25s;
+}
+
+.modal--closed .modal__dialog {
+  transform: scale(1.25);
+}
+
+.modal--no-js .modal__dialog {
+  transform: scale(1);
 }
 
 .modal__close {

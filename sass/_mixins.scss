@@ -1,13 +1,13 @@
 @mixin container() {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: $layout-mobile-offset;
+  padding-right: $layout-mobile-offset;
 
   @media #{$tablet-up} {
     max-width: 668px;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $layout-tablet-offset;
+    padding-right: $layout-tablet-offset;
   }
 
   @media #{$desktop-up} {
@@ -16,7 +16,6 @@
 }
 
 @mixin clearfix() {
-
   &::after {
     content: "";
     display: table;
@@ -30,14 +29,17 @@
   list-style: none;
 }
 
-@mixin sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-  overflow: hidden;
-  white-space: nowrap;
+@mixin mobile-title-typography {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+@mixin tablet-title-typography {
+  font-size: 43px;
+  line-height: 50px;
+}
+
+@mixin desktop-title-typography {
+  font-size: 53px;
+  line-height: 57px;
 }

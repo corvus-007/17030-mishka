@@ -19,11 +19,25 @@ $font-size--large: 17px;
 $line-height: 24px;
 
 // Dimensions
+$layout-mobile-offset: 30px;
+$layout-tablet-offset: 50px;
+$layout-desktop-offset: $layout-tablet-offset;
+
+$column-mobile-size: 130px;
+$column-tablet-size: 167px;
+$column-desktop-size: 175px;
+
 $product-card-padding: 28px;
 $special-card-padding: 34px;
+
+// Shadows
+$card-shadow-hover: 0 6px 10px rgba(#000000, 0.1);
+$card-shadow-active: 0 3px 5px rgba(#000000, 0.1);
 
 // Breakpoints
 $mobile-up: "(min-width: 320px)";
 $mobile-only: "(max-width: 767px)";
 $tablet-up: "(min-width: 768px)";
+$tablet-only: "(max-width: 1149px)";
 $desktop-up: "(min-width: 1150px)";
+$retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";

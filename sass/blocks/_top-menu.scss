@@ -1,38 +1,22 @@
 .top-menu {
   @include container();
-  @include clearfix();
 
-  padding-top: 22px;
-  padding-bottom: 22px;
-  text-align: center;
-  border-bottom: 1px solid $gray--light;
-}
-
-.top-menu__logo {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.top-menu__logo-image {
-
-}
-
-.top-menu__toggle {
   position: relative;
-  float: right;
-  width: 21px;
-  height: 21px;
-  margin-top: 5px;
-  font-size: 0;
-  border: none;
-  background: $color-white url("../img/icon-menu-close.svg") no-repeat center / contain;
-  cursor: pointer;
+}
 
-  &--closed {
-    background-image: url("../img/icon-menu-open.svg");
+.top-menu__note {
+  display: none;
+}
+
+@media #{$tablet-up} {
+  .top-menu {
+
   }
 
-  &--no-js {
-    display: none;
+  .top-menu__note {
+    position: absolute;
+    display: block;
+    right: $layout-tablet-offset;
+    bottom: 0;
   }
 }

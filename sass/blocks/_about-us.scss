@@ -8,11 +8,11 @@
 }
 
 .about-us__title {
+  @include mobile-title-typography();
+
   margin: 0;
   margin-bottom: 27px;
   font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
   color: $color-black;
 }
 
@@ -32,7 +32,7 @@
     content: "";
     display: block;
     width: 55px;
-    height: 35px;
+    height: 37px;
     margin-left: -5px;
     margin-bottom: 17px;
     background-repeat: no-repeat;
@@ -41,32 +41,78 @@
   }
 
   &--eco::before {
-    height: 37px;
+    width: 32px;
+    // height: 37px;
     background-image: url("../img/icon-feature-1.svg");
   }
 
   &--cheap::before {
-    height: 27px;
-    background-image: url("../img/icon-feature-2.svg");
-  }
-
-  &--likes::before {
-    height: 27px;
+    width: 47px;
+    // height: 27px;
     background-image: url("../img/icon-feature-3.svg");
   }
 
-  &--love::before {
-    height: 34px;
-    background-image: url("../img/icon-feature-4.svg");
-  }
-
-  &--support::before {
-    height: 23px;
+  &--likes::before {
+    width: 34px;
+    // height: 27px;
     background-image: url("../img/icon-feature-5.svg");
   }
 
+  &--love::before {
+    width: 35px;
+    // height: 34px;
+    background-image: url("../img/icon-feature-2.svg");
+  }
+
+  &--support::before {
+    width: 55px;
+    // height: 23px;
+    background-image: url("../img/icon-feature-4.svg");
+  }
+
   &--gift::before {
-    height: 32px;
+    width: 33px;
+    // height: 32px;
     background-image: url("../img/icon-feature-6.svg");
   }
+}
+
+@media #{$tablet-up} {
+  .about-us__title {
+    @include tablet-title-typography();
+
+    margin-bottom: 50px;
+  }
+
+  .about-us__lists-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-us__list {
+    width: 50%;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+
+  .about-us__item {
+    margin-bottom: 55px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media #{$desktop-up} {
+  .about-us__title {
+    @include desktop-title-typography();
+
+    margin-left: $column-desktop-size;
+    margin-bottom: 50px;
+  }
+
+  .about-us__lists-wrapper {
+    margin-left: $column-desktop-size;
+    margin-right: $column-desktop-size;
+  }
+
 }

@@ -1,0 +1,13 @@
+.page-welcome {
+  padding-top: 70px;
+  text-align: center;
+  background-color: $gray--lightest;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% -20px;
+
+  @media #{$tablet-up} {
+    padding-top: 100px;
+    background-position: center;
+  }
+}
