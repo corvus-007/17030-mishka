@@ -1,10 +1,12 @@
 .reviews {
+
 }
 
 .reviews__inner {
+  @include container();
+
   padding-top: 30px;
   padding-bottom: 44px;
-  @include container();
 }
 
 .reviews__title {
