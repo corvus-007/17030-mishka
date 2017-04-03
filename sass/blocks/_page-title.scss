@@ -9,13 +9,12 @@
   color: $color-black;
 
   @media #{$tablet-up} {
-    font-size: 43px;
-    line-height: 50px;
+    @include tablet-title-typography();
+
     text-align: center;
   }
 
   @media #{$desktop-up} {
-    font-size: 53px;
-    line-height: 57px;
+    @include desktop-title-typography();
   }
 }

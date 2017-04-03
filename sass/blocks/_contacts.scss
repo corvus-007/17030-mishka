@@ -89,7 +89,7 @@
   }
 
   .contacts__info-item {
-    width: calc(#{$column-tablet-size} * 2);
+    width: ($column-tablet-size * 2);
     margin-bottom: 0;
     padding-right: 35px;
     box-sizing: border-box;
@@ -116,7 +116,7 @@
     @include desktop-title-typography();
 
     justify-content: flex-start;
-    width: calc(#{$column-desktop-size} * 3);
+    width: ($column-desktop-size * 3);
     margin: 0;
     margin-bottom: 50px;
     padding: 0;
@@ -133,13 +133,13 @@
     position: absolute;
     top: 0;
     right: $layout-desktop-offset;
-    width: calc(#{$column-desktop-size} * 3);
+    width: ($column-desktop-size * 3);
     margin-bottom: 0;
   }
 
   .contacts__info {
     flex-direction: column;
-    width: calc(#{$column-desktop-size} * 2);
+    width: ($column-desktop-size * 2);
     margin-left: $column-desktop-size;
     margin-bottom: 80px;
     padding: 0;
@@ -154,7 +154,7 @@
   }
 
   .contacts__footer {
-    width: calc(#{$column-desktop-size} * 2);
+    width: ($column-desktop-size * 2);
     margin-left: $column-desktop-size;
     padding: 0;
     padding-right: 45px;
