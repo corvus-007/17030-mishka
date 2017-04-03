@@ -10,7 +10,7 @@
 }
 
 .form-order__section {
-  padding-bottom: 32px;
+  padding-bottom: 10px;
 }
 
 .form-order__section-inner {
@@ -44,7 +44,7 @@
 }
 
 .form-order__radios-group {
-  margin-bottom: -22px;
+
 }
 
 .form-order__custom-radio {
@@ -100,9 +100,9 @@
     left: 12px;
     width: 15px;
     height: 15px;
-    opacity: 0;
     border-radius: 50%;
     background-color: $color-primary;
+    opacity: 0;
     transition: opacity 0.25s;
   }
 }
@@ -115,7 +115,6 @@
 }
 
 .form-order__checkboxes-group {
-  margin-bottom: -22px;
 }
 
 .form-order__custom-checkbox {
@@ -222,14 +221,14 @@
   width: 100%;
   min-height: 142px;
   padding: 14px 15px;
-  box-sizing: border-box;
-  resize: vertical;
   font-size: $font-size--large;
   line-height: 18px;
   font-family: inherit;
   vertical-align: middle;
-  border: 2px solid $color-black;
   color: $color-black;
+  border: 2px solid $color-black;
+  box-sizing: border-box;
+  resize: vertical;
   transition: border-color 0.25s;
 
   &:hover,
@@ -263,7 +262,7 @@
 
   .form-order__section {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 26px;
 
     &--filled {
       background-color: $gray--lighten;
@@ -279,7 +278,7 @@
     }
 
     &--glued-end {
-      padding-bottom: 50px;
+      padding-bottom: 26px;
     }
   }
 
@@ -302,7 +301,6 @@
 
   .form-order__controls-group {
     flex-grow: 1;
-    margin-bottom: -22px;
   }
 
   .form-order__radios-group {
@@ -310,19 +308,24 @@
   }
 
   .form-order__checkboxes-group {
-    flex-grow: 1;
     display: flex;
+    flex-grow: 1;
     flex-wrap: wrap;
+  }
+
+  .form-order__radio-label {
+    margin-bottom: 24px;
   }
 
   .form-order__checkbox-label {
     width: 50%;
+    margin-bottom: 24px;
     padding-right: 20px;
     box-sizing: border-box;
   }
 
   .form-order__controls-group {
-    margin-bottom: -24px;
+
   }
 
   .form-order__section--glued-start .form-order__controls-group {
@@ -347,8 +350,9 @@
 
   .form-order__footer {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
   }
 
   .form-order__footnote {
@@ -363,7 +367,6 @@
     padding-right: $column-desktop-size;
     box-sizing: border-box;
   }
-
 
   .form-order__section-title {
     width: $column-desktop-size;
@@ -387,7 +390,7 @@
   }
 
   .form-order__checkbox-label {
-    width: calc(100% / 3);
+    width: (100% / 3);
   }
 
   .form-order__footer {
