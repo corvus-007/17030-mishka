@@ -7,10 +7,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 22px $layout-mobile-offset;
-  text-decoration: none;
   font-weight: 700;
   font-size: 19px;
   line-height: $line-height;
+  text-decoration: none;
   color: $color-white;
 
   &:hover,
@@ -63,6 +63,7 @@
 @media #{$tablet-up} {
   .category-nav {
     @include container();
+
     display: flex;
   }
 
