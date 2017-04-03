@@ -16,7 +16,8 @@
 }
 
 .main-nav__link {
-  display: block;
+  display: flex;
+  align-items: center;
   color: $color-black;
   text-decoration: none;
   transition: color 0.25s;
@@ -36,7 +37,8 @@
 }
 
 .main-nav__user-link {
-  display: block;
+  display: flex;
+  align-items: center;
   color: $color-black;
   text-decoration: none;
   transition: color 0.25s;
