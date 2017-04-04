@@ -60,6 +60,10 @@
 }
 
 @media #{$tablet-up} {
+  .contacts {
+    padding-top: 45px;
+  }
+
   .contacts__inner {
 
   }
@@ -71,7 +75,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     &::after {
       content: "";
@@ -84,6 +88,7 @@
   .contacts__info {
     display: flex;
     width: 100%;
+    margin-top: 0;
     margin-bottom: 50px;
     font-size: $font-size--large;
   }
@@ -101,6 +106,10 @@
 }
 
 @media #{$desktop-up} {
+  .contacts {
+    padding-top: 70px;
+  }
+
   .contacts__inner {
     position: relative;
     display: block;
