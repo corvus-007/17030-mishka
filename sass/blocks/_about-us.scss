@@ -72,6 +72,11 @@
 }
 
 @media #{$tablet-up} {
+  .about-us {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+
   .about-us__title {
     @include tablet-title-typography();
 
@@ -97,6 +102,11 @@
 }
 
 @media #{$desktop-up} {
+  .about-us {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
   .about-us__title {
     @include desktop-title-typography();
 
