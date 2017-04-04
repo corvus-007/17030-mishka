@@ -47,6 +47,15 @@
 }
 
 @media #{$tablet-up} {
+  .reviews {
+    padding-top: 70px;
+    padding-bottom: 130px;
+    background-image: linear-gradient(#add, #add);
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    background-size: auto 15px;
+  }
+
   .reviews__inner {
     display: flex;
     flex-wrap: wrap;
@@ -76,6 +85,12 @@
 }
 
 @media #{$desktop-up} {
+  .reviews {
+    padding-bottom: 180px;
+    background-image: linear-gradient(#dad, #dad);
+    background-size: auto 24px;
+  }
+
   .reviews__inner {
     background-position: $layout-tablet-offset 0;
   }
