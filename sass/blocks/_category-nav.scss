@@ -4,7 +4,7 @@
 
 .category-nav__item {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   padding: 22px $layout-mobile-offset;
   font-weight: 700;
@@ -12,9 +12,12 @@
   line-height: $line-height;
   text-decoration: none;
   color: $color-white;
+  transition: 0.25s;
 
   &:hover,
   &:focus {
+    padding-bottom: 27px;
+    margin-top: -5px;
 
     &::after {
       opacity: 0.7;
@@ -22,6 +25,8 @@
   }
 
   &:active {
+    margin-top: -5px;
+    padding-bottom: 27px;
 
     &::after {
       opacity: 0.3;
@@ -42,6 +47,12 @@
   &--accessory {
     background-color: #63d1bb;
 
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #59d5bc;
+    }
+
     &::after {
       background-image: url("../img/icon-interior.svg");
     }
@@ -49,6 +60,12 @@
 
   &--toys {
     background-color: #56c3b2;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #46c1ae;
+    }
 
     &::after {
       background-image: url("../img/icon-toy.svg");
@@ -69,7 +86,18 @@
 
   .category-nav__item {
     flex-grow: 1;
+    padding-top: 27px;
+    padding-bottom: 27px;
     font-size: 20px;
     line-height: 30px;
+
+    &:hover,
+    &:focus {
+      padding-bottom: 32px;
+    }
+
+    &:active {
+      padding-bottom: 32px;
+    }
   }
 }
