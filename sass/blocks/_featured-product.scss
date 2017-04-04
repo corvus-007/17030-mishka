@@ -88,7 +88,11 @@
 @media #{$tablet-up} {
   .featured-product {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
+    background-image: linear-gradient(#add, #add);
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    background-size: auto 15px;
   }
 
   .featured-product__inner {
@@ -149,6 +153,13 @@
 }
 
 @media #{$desktop-up} {
+  .featured-product {
+    padding-top: 70px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(#dad, #dad);
+    background-size: auto 24px;
+  }
+
   .featured-product__inner {
     position: relative;
     padding-top: 55px;
