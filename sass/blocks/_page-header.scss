@@ -1,4 +1,6 @@
 .page-header {
+  @include bg-zigzag-fill();
+
   margin-bottom: 30px;
   padding-top: 73px;
   padding-bottom: 73px;
@@ -8,10 +10,6 @@
     margin-bottom: 80px;
     padding-top: 60px;
     padding-bottom: 80px;
-    background-image: linear-gradient(#add, #add);
-    background-repeat: repeat-x;
-    background-position: bottom center;
-    background-size: auto 34px;
   }
 
   @media #{$desktop-up} {

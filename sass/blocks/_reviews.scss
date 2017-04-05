@@ -1,5 +1,5 @@
 .reviews {
-
+  @include bg-zigzag-line();
 }
 
 .reviews__inner {
@@ -49,19 +49,13 @@
 @media #{$tablet-up} {
   .reviews {
     padding-top: 70px;
-    padding-bottom: 130px;
-    background-image: linear-gradient(#add, #add);
-    background-repeat: repeat-x;
-    background-position: bottom center;
-    background-size: auto 15px;
   }
 
   .reviews__inner {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding-top: 70px;
-    padding-bottom: 95px;
+    padding-bottom: 130px;
     background: url("../img/review@1x.jpg") no-repeat 0 0;
     background-size: 350px 457px;
   }
@@ -92,12 +86,11 @@
 
 @media #{$desktop-up} {
   .reviews {
-    padding-bottom: 180px;
-    background-image: linear-gradient(#dad, #dad);
-    background-size: auto 24px;
+
   }
 
   .reviews__inner {
+    padding-bottom: 180px;
     background-position: $layout-tablet-offset 0;
   }
 

@@ -1,4 +1,6 @@
 .page-welcome {
+  @include bg-zigzag-fill();
+
   padding-top: 70px;
   text-align: center;
   background-color: $gray--lightest;
@@ -17,27 +19,9 @@
     background-position: bottom center;
     background-size: 1150px 746px;
     position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      transform: translateY(50%);
-      height: 22px;
-      background: url("../img/bg-zigzag-fill.svg") repeat-x center / auto 100%;
-    }
   }
 
   @media #{$tablet-up} and #{$retina} {
     background-image: url("../img/hero-desktop@2x.jpg");
-  }
-
-  @media #{$desktop-up} {
-
-    &::after {
-      height: 34px;
-    }
   }
 }

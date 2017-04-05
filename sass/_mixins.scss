@@ -43,3 +43,48 @@
   font-size: 53px;
   line-height: 57px;
 }
+
+@mixin bg-zigzag-fill {
+  @media #{$tablet-up} {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: translateY(50%);
+      height: 22px;
+      background: url("../img/bg-zigzag-fill.svg") repeat-x center / auto 100%;
+    }
+  }
+
+  @media #{$desktop-up} {
+    &::after {
+      height: 34px;
+    }
+  }
+}
+
+@mixin bg-zigzag-line {
+  @media #{$tablet-up} {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 15px;
+      background: url("../img/bg-zigzag-line.svg") repeat-x center / auto 100%;
+    }
+  }
+
+  @media #{$desktop-up} {
+    &::after {
+      height: 24px;
+    }
+  }
+}
