@@ -33,14 +33,6 @@
   }
 
   &--prev::before {
-    background-image: url("../img/icon-left-arrow.svg");
-  }
-
-  &--next::before {
-    background-image: url("../img/icon-right-arrow.svg");
-  }
-
-  &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -52,6 +44,22 @@
     margin: auto;
     background-repeat: no-repeat;
     background-position: center;
+    background-image: url("../img/icon-left-arrow.svg");
+  }
+
+  &--next::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 26px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/icon-right-arrow.svg");
   }
 }
 

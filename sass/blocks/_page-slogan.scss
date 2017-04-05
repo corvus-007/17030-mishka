@@ -3,8 +3,6 @@
 
   margin-top: 0;
   margin-bottom: 120px;
-  // padding-left: $layout-mobile-offset;
-  // padding-right: $layout-mobile-offset;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
@@ -22,7 +20,7 @@
 
 @media #{$desktop-up} {
   .page-slogan {
-    max-width: calc(#{$column-desktop-size} * 4);
+    max-width: ($column-desktop-size * 4);
     margin-bottom: 350px;
     font-size: 53px;
     line-height: 57px;

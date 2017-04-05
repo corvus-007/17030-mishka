@@ -42,42 +42,41 @@
 
   &--eco::before {
     width: 32px;
-    // height: 37px;
     background-image: url("../img/icon-feature-1.svg");
   }
 
   &--cheap::before {
     width: 47px;
-    // height: 27px;
     background-image: url("../img/icon-feature-3.svg");
   }
 
   &--likes::before {
     width: 34px;
-    // height: 27px;
     background-image: url("../img/icon-feature-5.svg");
   }
 
   &--love::before {
     width: 35px;
-    // height: 34px;
     background-image: url("../img/icon-feature-2.svg");
   }
 
   &--support::before {
     width: 55px;
-    // height: 23px;
     background-image: url("../img/icon-feature-4.svg");
   }
 
   &--gift::before {
     width: 33px;
-    // height: 32px;
     background-image: url("../img/icon-feature-6.svg");
   }
 }
 
 @media #{$tablet-up} {
+  .about-us {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+
   .about-us__title {
     @include tablet-title-typography();
 
@@ -103,6 +102,11 @@
 }
 
 @media #{$desktop-up} {
+  .about-us {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
   .about-us__title {
     @include desktop-title-typography();
 
@@ -114,5 +118,4 @@
     margin-left: $column-desktop-size;
     margin-right: $column-desktop-size;
   }
-
 }

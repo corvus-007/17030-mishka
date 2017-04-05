@@ -18,7 +18,6 @@ window.addEventListener('DOMContentLoaded', function() {
     modal.classList.remove('modal--no-js');
 
     Array.prototype.forEach.call(triggerModalItems, function(triggerModal) {
-      console.log(triggerModal)
       triggerModal.addEventListener('click', function(event) {
         event.preventDefault();
         modal.classList.toggle('modal--closed');

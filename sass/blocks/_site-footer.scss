@@ -16,8 +16,8 @@
   @include clear-list();
 
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -63,9 +63,9 @@
   font-size: 19px;
   line-height: 18px;
   text-align: center;
+  color: $color-base;
   text-decoration: none;
   border-top: 1px solid $gray;
-  color: $color-base;
   transition: color 0.25s;
 
   &:hover,
@@ -116,8 +116,8 @@
   }
 
   .site-footer__logo {
+    flex-basis: (100% / 3);
     display: inline-block;
-    flex-basis: calc(100% / 3);
   }
 
   .site-footer__logo-link {
@@ -141,14 +141,14 @@
   }
 
   .site-footer__socials {
-    flex-basis: calc(100% / 3);
+    flex-basis: (100% / 3);
     padding-top: 0;
     padding-bottom: 0;
   }
 
   .site-footer__developer {
     justify-content: flex-end;
-    flex-basis: calc(100% / 3);
+    flex-basis: (100% / 3);
     padding-top: 0;
     padding-bottom: 0;
     border-top: none;
