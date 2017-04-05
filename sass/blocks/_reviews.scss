@@ -84,6 +84,12 @@
   }
 }
 
+@media #{$tablet-up} and #{$retina} {
+  .reviews__inner {
+    background-image: url("../img/review@2x.jpg");
+  }
+}
+
 @media #{$desktop-up} {
   .reviews {
     padding-bottom: 180px;
