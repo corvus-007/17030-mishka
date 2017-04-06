@@ -44,6 +44,37 @@
 
 }
 
+.contacts__info-link {
+  position: relative;
+  text-decoration: none;
+  color: $color-base;
+  transition: color 0.25s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid $color-primary;
+    left: 0;
+    right: 0;
+    top: 100%;
+    transition: border-bottom-color 0.25s, right 0.25s;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-primary;
+  }
+
+  &:active {
+    color: #c7ece7;
+
+    &::before {
+      right: 25px;
+      border-bottom-color: #c7ece7;
+    }
+  }
+}
+
 .contacts__map {
   order: 1;
   width: 100%;
