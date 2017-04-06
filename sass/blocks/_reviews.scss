@@ -58,6 +58,10 @@
     padding-bottom: 130px;
     background: url("../img/review@1x.jpg") no-repeat 0 0;
     background-size: 350px 457px;
+
+    @media #{$retina} {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__title {
@@ -75,12 +79,6 @@
   .reviews__comment {
     margin-bottom: 50px;
     font-size: $font-size--large;
-  }
-}
-
-@media #{$tablet-up} and #{$retina} {
-  .reviews__inner {
-    background-image: url("../img/review@2x.jpg");
   }
 }
 
