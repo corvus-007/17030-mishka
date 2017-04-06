@@ -183,6 +183,7 @@
 }
 
 .form-order__container-input {
+  position: relative;
   margin-bottom: 22px;
 }
 
@@ -215,6 +216,35 @@
     color: $color-base;
     opacity: 0.3;
   }
+
+  &--has-icon {
+    padding-right: 50px;
+  }
+}
+
+.form-order__input-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  fill: $color-base;
+  fill-opacity: 0.3;
+  transition: fill 0.25s, fill-opacity 0.25s;
+
+  &--phone {
+    margin-right: 8px;
+  }
+
+  &--email {
+    margin-right: 5px;
+  }
+}
+
+.form-order__input:hover + .form-order__input-icon,
+.form-order__input:focus + .form-order__input-icon {
+  fill: $color-primary;
+  fill-opacity: 1;
 }
 
 .form-order__textarea {
@@ -346,6 +376,14 @@
     flex-grow: 1;
     padding-left: 18px;
     padding-right: 18px;
+
+    &--has-icon {
+      padding-right: 60px;
+    }
+  }
+
+  .form-order__input-icon {
+    right: 15px;
   }
 
   .form-order__footer {
