@@ -122,23 +122,22 @@
 
   .site-footer__logo-link {
     text-decoration: none;
-    color: $color-base;
-    transition: color 0.25s, opacity 0.25s;
-
-    &:hover,
-    &:focus {
-      color: #46c1ae;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 
   .site-footer__logo-image {
     width: 102px;
     height: 34px;
-    fill: currentColor;
+    fill: $color-base;
+    transition: fill 0.25s, fill-opacity 0.25s;
+  }
+
+  .site-footer__logo-link:hover .site-footer__logo-image,
+  .site-footer__logo-link:focus .site-footer__logo-image {
+    fill: #46c1ae;
+  }
+
+  .site-footer__logo-link:active .site-footer__logo-image {
+    fill-opacity: 0.3;
   }
 
   .site-footer__socials {
