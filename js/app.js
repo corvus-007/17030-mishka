@@ -6,7 +6,6 @@ window.addEventListener('DOMContentLoaded', function() {
   var triggerModalItems = document.querySelectorAll('.js-trigger-modal');
 
   var formOrder = document.forms['form-order'];
-  var customLabel = null;
 
   mainNav.classList.remove('main-nav--no-js');
 
@@ -33,10 +32,9 @@ window.addEventListener('DOMContentLoaded', function() {
   }
 
   if (formOrder) {
-    formOrder.addEventListener('keypress', function(event) {
-      customLabel = event.target;
-      if (event.keyCode === 13 && customLabel.hasAttribute('tabindex')) {
-        customLabel.control.checked = (customLabel.control.checked) ? false : true;
+    formOrder.addEventListener('keydown', function(event) {
+      if (event.keyCode === 13 && event.target.hasAttribute('tabindex')) {
+        event.target.control.checked = !event.target.control.checked;
       }
     });
   }
