@@ -142,11 +142,12 @@
       <article class="special-card">
         <h2 class="special-card__title">Процесс производства</h2>
         <div class="special-card__video-holder">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-            <img class="special-card__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
-          </picture>
+          <video class="special-card__video">
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogv" type="video/ogg">
+            <source src="movie.webm" type="video/webm">
+            Извините, ваш браузер не поддерживает HTML5 видео. Вы можете <a href="movie.mp4">скачать видео</a>.
+          </video>
           <button class="special-card__play" type="button">Смотреть</button>
         </div>
         <div class="special-card__info">
